@@ -79,6 +79,12 @@
     
 
 
+    <!-- http://thesis.wouterpinnoo.be/patterns.owl#resourceQuote -->
+
+    <ns2:Datatype rdf:about="&ns3;resourceQuote"/>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -382,9 +388,9 @@
     <!-- http://thesis.wouterpinnoo.be/patterns.owl#Bushmann -->
 
     <ns1:Class rdf:about="&ns3;Bushmann">
-        <ns2:label rdf:datatype="&ns3;String">Frank Buschmann, Kevlin Henney, and Douglas C Schmidt. Pattern Oriented Software Architecture Volume 5: On Patterns and Pattern Languages, volume 5. 2007.</ns2:label>
+        <ns2:label rdf:datatype="&ns3;String">Frank Buschmann, Regine Meunier, Hans Rohnert. Pattern Oriented Software Architecture Volume 1: A system of patterns, volume 1, 1996.</ns2:label>
         <ns2:subClassOf rdf:resource="&ns3;Resource"/>
-        <resourceReference rdf:datatype="&ns3;ISBN">0471486485</resourceReference>
+        <resourceReference rdf:datatype="&ns3;ISBN">0471958697</resourceReference>
     </ns1:Class>
     
 
@@ -529,8 +535,14 @@
     </ns1:NamedIndividual>
     <ns1:Axiom>
         <ns1:annotatedSource rdf:resource="&ns3;AbstractCommonServicesTactic"/>
-        <resourceAuthor rdf:resource="&ns3;Bass0Resource"/>
-        <ns1:annotatedTarget rdf:resource="&ns3;LayeredArchitecturePattern"/>
+        <resourceAuthor rdf:resource="&ns3;Bass2Resource"/>
+        <ns1:annotatedTarget rdf:resource="&ns3;BrokerPattern"/>
+        <ns1:annotatedProperty rdf:resource="&ns3;augments"/>
+    </ns1:Axiom>
+    <ns1:Axiom>
+        <ns1:annotatedSource rdf:resource="&ns3;AbstractCommonServicesTactic"/>
+        <resourceAuthor rdf:resource="&ns3;Bass3Resource"/>
+        <ns1:annotatedTarget rdf:resource="&ns3;MicrokernelPattern"/>
         <ns1:annotatedProperty rdf:resource="&ns3;augments"/>
     </ns1:Axiom>
     <ns1:Axiom>
@@ -541,27 +553,21 @@
     </ns1:Axiom>
     <ns1:Axiom>
         <ns1:annotatedSource rdf:resource="&ns3;AbstractCommonServicesTactic"/>
-        <resourceAuthor rdf:resource="&ns3;Bass4Resource"/>
-        <ns1:annotatedTarget rdf:resource="&ns3;Tactic"/>
-        <ns1:annotatedProperty rdf:resource="&rdf;type"/>
-    </ns1:Axiom>
-    <ns1:Axiom>
-        <ns1:annotatedSource rdf:resource="&ns3;AbstractCommonServicesTactic"/>
         <resourceAuthor rdf:resource="&ns3;Bass1Resource"/>
         <ns1:annotatedTarget rdf:resource="&ns3;IncreaseCohesionTactic"/>
         <ns1:annotatedProperty rdf:resource="&ns3;isChildOf"/>
     </ns1:Axiom>
     <ns1:Axiom>
         <ns1:annotatedSource rdf:resource="&ns3;AbstractCommonServicesTactic"/>
-        <resourceAuthor rdf:resource="&ns3;Bass3Resource"/>
-        <ns1:annotatedTarget rdf:resource="&ns3;MicrokernelPattern"/>
+        <resourceAuthor rdf:resource="&ns3;Bass0Resource"/>
+        <ns1:annotatedTarget rdf:resource="&ns3;LayeredArchitecturePattern"/>
         <ns1:annotatedProperty rdf:resource="&ns3;augments"/>
     </ns1:Axiom>
     <ns1:Axiom>
         <ns1:annotatedSource rdf:resource="&ns3;AbstractCommonServicesTactic"/>
-        <resourceAuthor rdf:resource="&ns3;Bass2Resource"/>
-        <ns1:annotatedTarget rdf:resource="&ns3;BrokerPattern"/>
-        <ns1:annotatedProperty rdf:resource="&ns3;augments"/>
+        <resourceAuthor rdf:resource="&ns3;Bass4Resource"/>
+        <ns1:annotatedTarget rdf:resource="&ns3;Tactic"/>
+        <ns1:annotatedProperty rdf:resource="&rdf;type"/>
     </ns1:Axiom>
     
 
@@ -2945,12 +2951,6 @@
         <addresses rdf:resource="&ns3;ModifiabilityQualityAttribute"/>
     </ns1:NamedIndividual>
     <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Avgeriou10Resource"/>
-        <ns1:annotatedSource rdf:resource="&ns3;BlackboardImplView"/>
-        <ns1:annotatedTarget rdf:resource="&ns3;DataCenteredViewtype"/>
-        <ns1:annotatedProperty rdf:resource="&ns3;belongsTo"/>
-    </ns1:Axiom>
-    <ns1:Axiom>
         <ns1:annotatedSource rdf:resource="&ns3;ActiveRepositoryImplView"/>
         <resourceAuthor rdf:resource="&ns3;Avgeriou11Resource"/>
         <ns1:annotatedTarget rdf:resource="&ns3;BlackboardImplView"/>
@@ -2967,6 +2967,12 @@
         <resourceAuthor rdf:resource="&ns3;Avgeriou2Resource"/>
         <ns1:annotatedTarget rdf:resource="&ns3;BlackboardImplView"/>
         <ns1:annotatedProperty rdf:resource="&ns1;sameAs"/>
+    </ns1:Axiom>
+    <ns1:Axiom>
+        <resourceAuthor rdf:resource="&ns3;Avgeriou10Resource"/>
+        <ns1:annotatedSource rdf:resource="&ns3;BlackboardImplView"/>
+        <ns1:annotatedTarget rdf:resource="&ns3;DataCenteredViewtype"/>
+        <ns1:annotatedProperty rdf:resource="&ns3;belongsTo"/>
     </ns1:Axiom>
     
 
@@ -2985,12 +2991,6 @@
         <frames rdf:resource="&ns3;ModifiabilityQualityAttribute"/>
     </ns1:NamedIndividual>
     <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Bass8Resource"/>
-        <ns1:annotatedSource rdf:resource="&ns3;BlackboardImplViewpoint"/>
-        <ns1:annotatedTarget rdf:resource="&ns3;ModifiabilityQualityAttribute"/>
-        <ns1:annotatedProperty rdf:resource="&ns3;frames"/>
-    </ns1:Axiom>
-    <ns1:Axiom>
         <ns1:annotatedSource rdf:resource="&ns3;ActiveRepositoryImplViewpoint"/>
         <resourceAuthor rdf:resource="&ns3;Avgeriou12Resource"/>
         <ns1:annotatedTarget rdf:resource="&ns3;BlackboardImplViewpoint"/>
@@ -3001,6 +3001,12 @@
         <resourceAuthor rdf:resource="&ns3;Avgeriou3Resource"/>
         <ns1:annotatedTarget rdf:resource="&ns3;BlackboardImplViewpoint"/>
         <ns1:annotatedProperty rdf:resource="&ns1;sameAs"/>
+    </ns1:Axiom>
+    <ns1:Axiom>
+        <resourceAuthor rdf:resource="&ns3;Bass8Resource"/>
+        <ns1:annotatedSource rdf:resource="&ns3;BlackboardImplViewpoint"/>
+        <ns1:annotatedTarget rdf:resource="&ns3;ModifiabilityQualityAttribute"/>
+        <ns1:annotatedProperty rdf:resource="&ns3;frames"/>
     </ns1:Axiom>
     
 
@@ -3034,18 +3040,18 @@
         <ns1:annotatedProperty rdf:resource="&ns1;sameAs"/>
     </ns1:Axiom>
     <ns1:Axiom>
+        <ns1:annotatedSource rdf:resource="&ns3;ActiveRepositoryPattern"/>
+        <resourceAuthor rdf:resource="&ns3;Avgeriou13Resource"/>
+        <ns1:annotatedTarget rdf:resource="&ns3;BlackboardPattern"/>
+        <ns1:annotatedProperty rdf:resource="&ns1;sameAs"/>
+    </ns1:Axiom>
+    <ns1:Axiom>
         <ns1:annotatedSource rdf:resource="&ns3;BlackboardPattern"/>
         <resourceAuthor rdf:resource="&ns3;Bushmann4Resource"/>
         <resourceAuthor rdf:resource="&ns3;Clements3Resource"/>
         <ns1:annotatedTarget rdf:resource="&ns3;Pattern"/>
         <resourceAuthor rdf:resource="&ns3;Wikipedia2Resource"/>
         <ns1:annotatedProperty rdf:resource="&rdf;type"/>
-    </ns1:Axiom>
-    <ns1:Axiom>
-        <ns1:annotatedSource rdf:resource="&ns3;ActiveRepositoryPattern"/>
-        <resourceAuthor rdf:resource="&ns3;Avgeriou13Resource"/>
-        <ns1:annotatedTarget rdf:resource="&ns3;BlackboardPattern"/>
-        <ns1:annotatedProperty rdf:resource="&ns1;sameAs"/>
     </ns1:Axiom>
     
 
@@ -3067,6 +3073,12 @@
         <ns1:annotatedTarget rdf:resource="&ns3;DistributedSystemPurpose"/>
         <ns1:annotatedProperty rdf:resource="&ns3;isChildOf"/>
     </ns1:Axiom>
+    <ns1:Axiom>
+        <ns1:annotatedSource rdf:resource="&ns3;BrokerImplPurpose"/>
+        <resourceAuthor rdf:resource="&ns3;Bushmann72Resource"/>
+        <ns1:annotatedTarget rdf:resource="&ns3;Purpose"/>
+        <ns1:annotatedProperty rdf:resource="&rdf;type"/>
+    </ns1:Axiom>
     
 
 
@@ -3077,6 +3089,12 @@
         <ns2:label>Broker</ns2:label>
         <belongsTo rdf:resource="&ns3;BrokerPattern"/>
     </ns1:NamedIndividual>
+    <ns1:Axiom>
+        <ns1:annotatedSource rdf:resource="&ns3;BrokerImplStructure"/>
+        <resourceAuthor rdf:resource="&ns3;Bushmann71Resource"/>
+        <ns1:annotatedTarget rdf:resource="&ns3;Structure"/>
+        <ns1:annotatedProperty rdf:resource="&rdf;type"/>
+    </ns1:Axiom>
     
 
 
@@ -3099,6 +3117,12 @@
         <isParentOf rdf:resource="&ns3;TraderSystemImplView"/>
     </ns1:NamedIndividual>
     <ns1:Axiom>
+        <resourceAuthor rdf:resource="&ns3;Bass10Resource"/>
+        <ns1:annotatedSource rdf:resource="&ns3;BrokerImplView"/>
+        <ns1:annotatedTarget rdf:resource="&ns3;ModifiabilityQualityAttribute"/>
+        <ns1:annotatedProperty rdf:resource="&ns3;addresses"/>
+    </ns1:Axiom>
+    <ns1:Axiom>
         <resourceAuthor rdf:resource="&ns3;Avgeriou14Resource"/>
         <ns1:annotatedSource rdf:resource="&ns3;BrokerImplView"/>
         <ns1:annotatedTarget rdf:resource="&ns3;DistributionViewtype"/>
@@ -3109,12 +3133,6 @@
         <ns1:annotatedSource rdf:resource="&ns3;BrokerImplView"/>
         <ns1:annotatedTarget rdf:resource="&ns3;ComponentConnectorViewtype"/>
         <ns1:annotatedProperty rdf:resource="&ns3;belongsTo"/>
-    </ns1:Axiom>
-    <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Bass10Resource"/>
-        <ns1:annotatedSource rdf:resource="&ns3;BrokerImplView"/>
-        <ns1:annotatedTarget rdf:resource="&ns3;ModifiabilityQualityAttribute"/>
-        <ns1:annotatedProperty rdf:resource="&ns3;addresses"/>
     </ns1:Axiom>
     
 
@@ -3163,14 +3181,14 @@
     </ns1:NamedIndividual>
     <ns1:Axiom>
         <ns1:annotatedSource rdf:resource="&ns3;BrokerPattern"/>
-        <resourceAuthor rdf:resource="&ns3;Bushmann7Resource"/>
-        <ns1:annotatedTarget rdf:resource="&ns3;ProxyPattern"/>
+        <resourceAuthor rdf:resource="&ns3;Bushmann6Resource"/>
+        <ns1:annotatedTarget rdf:resource="&ns3;RemotePattern"/>
         <ns1:annotatedProperty rdf:resource="&ns3;isAlternativeTo"/>
     </ns1:Axiom>
     <ns1:Axiom>
         <ns1:annotatedSource rdf:resource="&ns3;BrokerPattern"/>
-        <resourceAuthor rdf:resource="&ns3;Bushmann6Resource"/>
-        <ns1:annotatedTarget rdf:resource="&ns3;RemotePattern"/>
+        <resourceAuthor rdf:resource="&ns3;Bushmann7Resource"/>
+        <ns1:annotatedTarget rdf:resource="&ns3;ProxyPattern"/>
         <ns1:annotatedProperty rdf:resource="&ns3;isAlternativeTo"/>
     </ns1:Axiom>
     <ns1:Axiom>
@@ -3724,6 +3742,26 @@
 
     <ns1:NamedIndividual rdf:about="&ns3;Bushmann70Resource">
         <rdf:type rdf:resource="&ns3;Bushmann"/>
+    </ns1:NamedIndividual>
+    
+
+
+    <!-- http://thesis.wouterpinnoo.be/patterns.owl#Bushmann71Resource -->
+
+    <ns1:NamedIndividual rdf:about="&ns3;Bushmann71Resource">
+        <rdf:type rdf:resource="&ns3;Bushmann"/>
+        <resourceReference rdf:datatype="&ns3;resourceQuote">The Broker architectural pattern comprises six types of participating components: clients. servers, brokers, bridges, client-side proxies and server-side proxies.</resourceReference>
+        <resourceReference rdf:datatype="&ns3;String">page 99</resourceReference>
+    </ns1:NamedIndividual>
+    
+
+
+    <!-- http://thesis.wouterpinnoo.be/patterns.owl#Bushmann72Resource -->
+
+    <ns1:NamedIndividual rdf:about="&ns3;Bushmann72Resource">
+        <rdf:type rdf:resource="&ns3;Bushmann"/>
+        <resourceReference rdf:datatype="&ns3;resourceQuote">By using the Broker pattern, an application can access distributed services simply by sending message calls to the appropriate object. instead of focusing on low-level inter-process communication. In addition, the Broker architecture is flexible, in that it allows dynamic change, addition, deletion, and relocation of objects.</resourceReference>
+        <resourceReference rdf:datatype="&ns3;String">page 101</resourceReference>
     </ns1:NamedIndividual>
     
 
@@ -4438,15 +4476,15 @@
         <ns1:annotatedProperty rdf:resource="&ns3;belongsTo"/>
     </ns1:Axiom>
     <ns1:Axiom>
-        <ns1:annotatedTarget rdf:resource="&ns3;CallAndReturnSystemsViewtype"/>
-        <resourceAuthor rdf:resource="&ns3;Clements5Resource"/>
-        <ns1:annotatedSource rdf:resource="&ns3;ClientServerImplView"/>
-        <ns1:annotatedProperty rdf:resource="&ns3;belongsTo"/>
-    </ns1:Axiom>
-    <ns1:Axiom>
         <resourceAuthor rdf:resource="&ns3;Bass13Resource"/>
         <ns1:annotatedSource rdf:resource="&ns3;ClientServerImplView"/>
         <ns1:annotatedTarget rdf:resource="&ns3;ComponentConnectorViewtype"/>
+        <ns1:annotatedProperty rdf:resource="&ns3;belongsTo"/>
+    </ns1:Axiom>
+    <ns1:Axiom>
+        <ns1:annotatedTarget rdf:resource="&ns3;CallAndReturnSystemsViewtype"/>
+        <resourceAuthor rdf:resource="&ns3;Clements5Resource"/>
+        <ns1:annotatedSource rdf:resource="&ns3;ClientServerImplView"/>
         <ns1:annotatedProperty rdf:resource="&ns3;belongsTo"/>
     </ns1:Axiom>
     
@@ -4535,6 +4573,12 @@
         <isChildOf rdf:resource="&ns3;IndependentComponentsStructure"/>
     </ns1:NamedIndividual>
     <ns1:Axiom>
+        <resourceAuthor rdf:resource="&ns3;Avgeriou17Resource"/>
+        <ns1:annotatedSource rdf:resource="&ns3;CommunicatingProcessesImplStructure"/>
+        <ns1:annotatedTarget rdf:resource="&ns3;ExplicitInvocationImplStructure"/>
+        <ns1:annotatedProperty rdf:resource="&ns1;sameAs"/>
+    </ns1:Axiom>
+    <ns1:Axiom>
         <ns1:annotatedSource rdf:resource="&ns3;CommunicatingProcessesImplStructure"/>
         <ns1:annotatedTarget rdf:resource="&ns3;EventSystemsImplStructure"/>
         <resourceAuthor rdf:resource="&ns3;Shaw5Resource"/>
@@ -4542,12 +4586,6 @@
     </ns1:Axiom>
     <ns1:Axiom>
         <resourceAuthor rdf:resource="&ns3;Avgeriou42Resource"/>
-        <ns1:annotatedSource rdf:resource="&ns3;CommunicatingProcessesImplStructure"/>
-        <ns1:annotatedTarget rdf:resource="&ns3;ExplicitInvocationImplStructure"/>
-        <ns1:annotatedProperty rdf:resource="&ns1;sameAs"/>
-    </ns1:Axiom>
-    <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Avgeriou17Resource"/>
         <ns1:annotatedSource rdf:resource="&ns3;CommunicatingProcessesImplStructure"/>
         <ns1:annotatedTarget rdf:resource="&ns3;ExplicitInvocationImplStructure"/>
         <ns1:annotatedProperty rdf:resource="&ns1;sameAs"/>
@@ -4571,6 +4609,12 @@
         <belongsTo rdf:resource="&ns3;ExplicitInvocationPattern"/>
     </ns1:NamedIndividual>
     <ns1:Axiom>
+        <resourceAuthor rdf:resource="&ns3;Avgeriou43Resource"/>
+        <ns1:annotatedSource rdf:resource="&ns3;CommunicatingProcessesImplView"/>
+        <ns1:annotatedTarget rdf:resource="&ns3;ExplicitInvocationImplView"/>
+        <ns1:annotatedProperty rdf:resource="&ns1;sameAs"/>
+    </ns1:Axiom>
+    <ns1:Axiom>
         <resourceAuthor rdf:resource="&ns3;Avgeriou18Resource"/>
         <ns1:annotatedSource rdf:resource="&ns3;CommunicatingProcessesImplView"/>
         <ns1:annotatedTarget rdf:resource="&ns3;ComponentInteractionViewtype"/>
@@ -4584,12 +4628,6 @@
     </ns1:Axiom>
     <ns1:Axiom>
         <resourceAuthor rdf:resource="&ns3;Avgeriou19Resource"/>
-        <ns1:annotatedSource rdf:resource="&ns3;CommunicatingProcessesImplView"/>
-        <ns1:annotatedTarget rdf:resource="&ns3;ExplicitInvocationImplView"/>
-        <ns1:annotatedProperty rdf:resource="&ns1;sameAs"/>
-    </ns1:Axiom>
-    <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Avgeriou43Resource"/>
         <ns1:annotatedSource rdf:resource="&ns3;CommunicatingProcessesImplView"/>
         <ns1:annotatedTarget rdf:resource="&ns3;ExplicitInvocationImplView"/>
         <ns1:annotatedProperty rdf:resource="&ns1;sameAs"/>
@@ -4611,13 +4649,13 @@
         <canApply rdf:resource="&ns3;ExplicitInvocationPattern"/>
     </ns1:NamedIndividual>
     <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Avgeriou44Resource"/>
+        <resourceAuthor rdf:resource="&ns3;Avgeriou20Resource"/>
         <ns1:annotatedSource rdf:resource="&ns3;CommunicatingProcessesImplViewpoint"/>
         <ns1:annotatedTarget rdf:resource="&ns3;ExplicitInvocationImplViewpoint"/>
         <ns1:annotatedProperty rdf:resource="&ns1;sameAs"/>
     </ns1:Axiom>
     <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Avgeriou20Resource"/>
+        <resourceAuthor rdf:resource="&ns3;Avgeriou44Resource"/>
         <ns1:annotatedSource rdf:resource="&ns3;CommunicatingProcessesImplViewpoint"/>
         <ns1:annotatedTarget rdf:resource="&ns3;ExplicitInvocationImplViewpoint"/>
         <ns1:annotatedProperty rdf:resource="&ns1;sameAs"/>
@@ -4642,15 +4680,15 @@
     </ns1:NamedIndividual>
     <ns1:Axiom>
         <ns1:annotatedSource rdf:resource="&ns3;CommunicatingProcessesPattern"/>
-        <ns1:annotatedTarget rdf:resource="&ns3;ExplicitInvocationPattern"/>
-        <resourceAuthor rdf:resource="&ns3;Shaw13Resource"/>
-        <ns1:annotatedProperty rdf:resource="&ns1;sameAs"/>
-    </ns1:Axiom>
-    <ns1:Axiom>
-        <ns1:annotatedSource rdf:resource="&ns3;CommunicatingProcessesPattern"/>
         <ns1:annotatedTarget rdf:resource="&ns3;Pattern"/>
         <resourceAuthor rdf:resource="&ns3;Shaw6Resource"/>
         <ns1:annotatedProperty rdf:resource="&rdf;type"/>
+    </ns1:Axiom>
+    <ns1:Axiom>
+        <ns1:annotatedSource rdf:resource="&ns3;CommunicatingProcessesPattern"/>
+        <ns1:annotatedTarget rdf:resource="&ns3;ExplicitInvocationPattern"/>
+        <resourceAuthor rdf:resource="&ns3;Shaw13Resource"/>
+        <ns1:annotatedProperty rdf:resource="&ns1;sameAs"/>
     </ns1:Axiom>
     <ns1:Axiom>
         <ns1:annotatedSource rdf:resource="&ns3;CommunicatingProcessesPattern"/>
@@ -5016,16 +5054,16 @@
         <uses rdf:resource="&ns3;PublisherSubscriberPattern"/>
     </ns1:NamedIndividual>
     <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Avgeriou23Resource"/>
-        <ns1:annotatedSource rdf:resource="&ns3;CtwoPattern"/>
-        <ns1:annotatedTarget rdf:resource="&ns3;Pattern"/>
-        <ns1:annotatedProperty rdf:resource="&rdf;type"/>
-    </ns1:Axiom>
-    <ns1:Axiom>
         <resourceAuthor rdf:resource="&ns3;Avgeriou24Resource"/>
         <ns1:annotatedSource rdf:resource="&ns3;CtwoPattern"/>
         <ns1:annotatedTarget rdf:resource="&ns3;PublisherSubscriberPattern"/>
         <ns1:annotatedProperty rdf:resource="&ns3;uses"/>
+    </ns1:Axiom>
+    <ns1:Axiom>
+        <resourceAuthor rdf:resource="&ns3;Avgeriou23Resource"/>
+        <ns1:annotatedSource rdf:resource="&ns3;CtwoPattern"/>
+        <ns1:annotatedTarget rdf:resource="&ns3;Pattern"/>
+        <ns1:annotatedProperty rdf:resource="&rdf;type"/>
     </ns1:Axiom>
     <ns1:Axiom>
         <resourceAuthor rdf:resource="&ns3;Avgeriou25Resource"/>
@@ -5310,17 +5348,17 @@
         <isAlternativeTo rdf:resource="&ns3;PipesAndFiltersPattern"/>
     </ns1:NamedIndividual>
     <ns1:Axiom>
+        <resourceAuthor rdf:resource="&ns3;Clements14Resource"/>
+        <ns1:annotatedSource rdf:resource="&ns3;DecompositionPattern"/>
+        <ns1:annotatedTarget rdf:resource="&ns3;LayeredArchitecturePattern"/>
+        <ns1:annotatedProperty rdf:resource="&ns3;isAlternativeTo"/>
+    </ns1:Axiom>
+    <ns1:Axiom>
         <resourceAuthor rdf:resource="&ns3;Bass19Resource"/>
         <resourceAuthor rdf:resource="&ns3;Clements15Resource"/>
         <ns1:annotatedSource rdf:resource="&ns3;DecompositionPattern"/>
         <ns1:annotatedTarget rdf:resource="&ns3;Pattern"/>
         <ns1:annotatedProperty rdf:resource="&rdf;type"/>
-    </ns1:Axiom>
-    <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Clements14Resource"/>
-        <ns1:annotatedSource rdf:resource="&ns3;DecompositionPattern"/>
-        <ns1:annotatedTarget rdf:resource="&ns3;LayeredArchitecturePattern"/>
-        <ns1:annotatedProperty rdf:resource="&ns3;isAlternativeTo"/>
     </ns1:Axiom>
     
 
@@ -5336,16 +5374,16 @@
         <isParentOf rdf:resource="&ns3;UseStartupTimeBindingTactic"/>
     </ns1:NamedIndividual>
     <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Bass21Resource"/>
-        <ns1:annotatedSource rdf:resource="&ns3;DeferBindingTimeTactic"/>
-        <ns1:annotatedTarget rdf:resource="&ns3;Tactic"/>
-        <ns1:annotatedProperty rdf:resource="&rdf;type"/>
-    </ns1:Axiom>
-    <ns1:Axiom>
         <resourceAuthor rdf:resource="&ns3;Bass20Resource"/>
         <ns1:annotatedSource rdf:resource="&ns3;DeferBindingTimeTactic"/>
         <ns1:annotatedTarget rdf:resource="&ns3;ModifiabilityQualityAttribute"/>
         <ns1:annotatedProperty rdf:resource="&ns3;achieves"/>
+    </ns1:Axiom>
+    <ns1:Axiom>
+        <resourceAuthor rdf:resource="&ns3;Bass21Resource"/>
+        <ns1:annotatedSource rdf:resource="&ns3;DeferBindingTimeTactic"/>
+        <ns1:annotatedTarget rdf:resource="&ns3;Tactic"/>
+        <ns1:annotatedProperty rdf:resource="&rdf;type"/>
     </ns1:Axiom>
     
 
@@ -5558,13 +5596,13 @@
         <belongsTo rdf:resource="&ns3;RemoteProcedureCallPattern"/>
     </ns1:NamedIndividual>
     <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Avgeriou80Resource"/>
+        <resourceAuthor rdf:resource="&ns3;Avgeriou28Resource"/>
         <ns1:annotatedSource rdf:resource="&ns3;DistributedObjectsImplPurpose"/>
         <ns1:annotatedTarget rdf:resource="&ns3;RemoteProcedureCallImplPurpose"/>
         <ns1:annotatedProperty rdf:resource="&ns1;sameAs"/>
     </ns1:Axiom>
     <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Avgeriou28Resource"/>
+        <resourceAuthor rdf:resource="&ns3;Avgeriou80Resource"/>
         <ns1:annotatedSource rdf:resource="&ns3;DistributedObjectsImplPurpose"/>
         <ns1:annotatedTarget rdf:resource="&ns3;RemoteProcedureCallImplPurpose"/>
         <ns1:annotatedProperty rdf:resource="&ns1;sameAs"/>
@@ -5583,13 +5621,13 @@
         <belongsTo rdf:resource="&ns3;RemoteProcedureCallPattern"/>
     </ns1:NamedIndividual>
     <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Avgeriou81Resource"/>
+        <resourceAuthor rdf:resource="&ns3;Avgeriou29Resource"/>
         <ns1:annotatedSource rdf:resource="&ns3;DistributedObjectsImplStructure"/>
         <ns1:annotatedTarget rdf:resource="&ns3;RemoteProcedureCallImplStructure"/>
         <ns1:annotatedProperty rdf:resource="&ns1;sameAs"/>
     </ns1:Axiom>
     <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Avgeriou29Resource"/>
+        <resourceAuthor rdf:resource="&ns3;Avgeriou81Resource"/>
         <ns1:annotatedSource rdf:resource="&ns3;DistributedObjectsImplStructure"/>
         <ns1:annotatedTarget rdf:resource="&ns3;RemoteProcedureCallImplStructure"/>
         <ns1:annotatedProperty rdf:resource="&ns1;sameAs"/>
@@ -5670,12 +5708,6 @@
         <ns1:sameAs rdf:resource="&ns3;RemoteProcedureCallPattern"/>
     </ns1:NamedIndividual>
     <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Avgeriou85Resource"/>
-        <ns1:annotatedSource rdf:resource="&ns3;DistributedObjectsPattern"/>
-        <ns1:annotatedTarget rdf:resource="&ns3;RemoteProcedureCallPattern"/>
-        <ns1:annotatedProperty rdf:resource="&ns1;sameAs"/>
-    </ns1:Axiom>
-    <ns1:Axiom>
         <resourceAuthor rdf:resource="&ns3;Avgeriou32Resource"/>
         <ns1:annotatedSource rdf:resource="&ns3;DistributedObjectsPattern"/>
         <ns1:annotatedTarget rdf:resource="&ns3;Pattern"/>
@@ -5683,6 +5715,12 @@
     </ns1:Axiom>
     <ns1:Axiom>
         <resourceAuthor rdf:resource="&ns3;Avgeriou33Resource"/>
+        <ns1:annotatedSource rdf:resource="&ns3;DistributedObjectsPattern"/>
+        <ns1:annotatedTarget rdf:resource="&ns3;RemoteProcedureCallPattern"/>
+        <ns1:annotatedProperty rdf:resource="&ns1;sameAs"/>
+    </ns1:Axiom>
+    <ns1:Axiom>
+        <resourceAuthor rdf:resource="&ns3;Avgeriou85Resource"/>
         <ns1:annotatedSource rdf:resource="&ns3;DistributedObjectsPattern"/>
         <ns1:annotatedTarget rdf:resource="&ns3;RemoteProcedureCallPattern"/>
         <ns1:annotatedProperty rdf:resource="&ns1;sameAs"/>
@@ -5910,6 +5948,18 @@
         <augments rdf:resource="&ns3;ReflectionPattern"/>
     </ns1:NamedIndividual>
     <ns1:Axiom>
+        <resourceAuthor rdf:resource="&ns3;Bass30Resource"/>
+        <ns1:annotatedSource rdf:resource="&ns3;EncapsulateTactic"/>
+        <ns1:annotatedTarget rdf:resource="&ns3;ReduceCouplingTactic"/>
+        <ns1:annotatedProperty rdf:resource="&ns3;isChildOf"/>
+    </ns1:Axiom>
+    <ns1:Axiom>
+        <resourceAuthor rdf:resource="&ns3;Bass31Resource"/>
+        <ns1:annotatedTarget rdf:resource="&ns3;BlackboardPattern"/>
+        <ns1:annotatedSource rdf:resource="&ns3;EncapsulateTactic"/>
+        <ns1:annotatedProperty rdf:resource="&ns3;augments"/>
+    </ns1:Axiom>
+    <ns1:Axiom>
         <resourceAuthor rdf:resource="&ns3;Bass25Resource"/>
         <ns1:annotatedSource rdf:resource="&ns3;EncapsulateTactic"/>
         <ns1:annotatedTarget rdf:resource="&ns3;MicrokernelPattern"/>
@@ -5922,9 +5972,9 @@
         <ns1:annotatedProperty rdf:resource="&ns3;augments"/>
     </ns1:Axiom>
     <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Bass31Resource"/>
-        <ns1:annotatedTarget rdf:resource="&ns3;BlackboardPattern"/>
+        <resourceAuthor rdf:resource="&ns3;Bass28Resource"/>
         <ns1:annotatedSource rdf:resource="&ns3;EncapsulateTactic"/>
+        <ns1:annotatedTarget rdf:resource="&ns3;ReflectionPattern"/>
         <ns1:annotatedProperty rdf:resource="&ns3;augments"/>
     </ns1:Axiom>
     <ns1:Axiom>
@@ -5934,15 +5984,9 @@
         <ns1:annotatedProperty rdf:resource="&rdf;type"/>
     </ns1:Axiom>
     <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Bass30Resource"/>
+        <resourceAuthor rdf:resource="&ns3;Bass27Resource"/>
         <ns1:annotatedSource rdf:resource="&ns3;EncapsulateTactic"/>
-        <ns1:annotatedTarget rdf:resource="&ns3;ReduceCouplingTactic"/>
-        <ns1:annotatedProperty rdf:resource="&ns3;isChildOf"/>
-    </ns1:Axiom>
-    <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Bass26Resource"/>
-        <ns1:annotatedSource rdf:resource="&ns3;EncapsulateTactic"/>
-        <ns1:annotatedTarget rdf:resource="&ns3;ModelViewControllerPattern"/>
+        <ns1:annotatedTarget rdf:resource="&ns3;PipesAndFiltersPattern"/>
         <ns1:annotatedProperty rdf:resource="&ns3;augments"/>
     </ns1:Axiom>
     <ns1:Axiom>
@@ -5952,15 +5996,9 @@
         <ns1:annotatedProperty rdf:resource="&ns3;augments"/>
     </ns1:Axiom>
     <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Bass28Resource"/>
+        <resourceAuthor rdf:resource="&ns3;Bass26Resource"/>
         <ns1:annotatedSource rdf:resource="&ns3;EncapsulateTactic"/>
-        <ns1:annotatedTarget rdf:resource="&ns3;ReflectionPattern"/>
-        <ns1:annotatedProperty rdf:resource="&ns3;augments"/>
-    </ns1:Axiom>
-    <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Bass27Resource"/>
-        <ns1:annotatedSource rdf:resource="&ns3;EncapsulateTactic"/>
-        <ns1:annotatedTarget rdf:resource="&ns3;PipesAndFiltersPattern"/>
+        <ns1:annotatedTarget rdf:resource="&ns3;ModelViewControllerPattern"/>
         <ns1:annotatedProperty rdf:resource="&ns3;augments"/>
     </ns1:Axiom>
     
@@ -6083,6 +6121,12 @@
         <isParentOf rdf:resource="&ns3;PublisherSubscriberImplStructure"/>
     </ns1:NamedIndividual>
     <ns1:Axiom>
+        <resourceAuthor rdf:resource="&ns3;Avgeriou36Resource"/>
+        <ns1:annotatedSource rdf:resource="&ns3;EventSystemsImplStructure"/>
+        <ns1:annotatedTarget rdf:resource="&ns3;ImplicitInvocationImplStructure"/>
+        <ns1:annotatedProperty rdf:resource="&ns1;sameAs"/>
+    </ns1:Axiom>
+    <ns1:Axiom>
         <ns1:annotatedSource rdf:resource="&ns3;EventSystemsImplStructure"/>
         <ns1:annotatedTarget rdf:resource="&ns3;IndependentComponentsStructure"/>
         <resourceAuthor rdf:resource="&ns3;Shaw11Resource"/>
@@ -6090,12 +6134,6 @@
     </ns1:Axiom>
     <ns1:Axiom>
         <resourceAuthor rdf:resource="&ns3;Avgeriou47Resource"/>
-        <ns1:annotatedSource rdf:resource="&ns3;EventSystemsImplStructure"/>
-        <ns1:annotatedTarget rdf:resource="&ns3;ImplicitInvocationImplStructure"/>
-        <ns1:annotatedProperty rdf:resource="&ns1;sameAs"/>
-    </ns1:Axiom>
-    <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Avgeriou36Resource"/>
         <ns1:annotatedSource rdf:resource="&ns3;EventSystemsImplStructure"/>
         <ns1:annotatedTarget rdf:resource="&ns3;ImplicitInvocationImplStructure"/>
         <ns1:annotatedProperty rdf:resource="&ns1;sameAs"/>
@@ -6125,16 +6163,16 @@
         <ns1:annotatedProperty rdf:resource="&ns1;sameAs"/>
     </ns1:Axiom>
     <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Avgeriou37Resource"/>
-        <ns1:annotatedTarget rdf:resource="&ns3;ComponentInteractionViewtype"/>
-        <ns1:annotatedSource rdf:resource="&ns3;EventSystemsImplView"/>
-        <ns1:annotatedProperty rdf:resource="&ns3;belongsTo"/>
-    </ns1:Axiom>
-    <ns1:Axiom>
         <resourceAuthor rdf:resource="&ns3;Avgeriou38Resource"/>
         <ns1:annotatedSource rdf:resource="&ns3;EventSystemsImplView"/>
         <ns1:annotatedTarget rdf:resource="&ns3;ImplicitInvocationImplView"/>
         <ns1:annotatedProperty rdf:resource="&ns1;sameAs"/>
+    </ns1:Axiom>
+    <ns1:Axiom>
+        <resourceAuthor rdf:resource="&ns3;Avgeriou37Resource"/>
+        <ns1:annotatedTarget rdf:resource="&ns3;ComponentInteractionViewtype"/>
+        <ns1:annotatedSource rdf:resource="&ns3;EventSystemsImplView"/>
+        <ns1:annotatedProperty rdf:resource="&ns3;belongsTo"/>
     </ns1:Axiom>
     
 
@@ -6197,13 +6235,13 @@
         <ns1:annotatedProperty rdf:resource="&rdf;type"/>
     </ns1:Axiom>
     <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Avgeriou50Resource"/>
+        <resourceAuthor rdf:resource="&ns3;Avgeriou40Resource"/>
         <ns1:annotatedSource rdf:resource="&ns3;EventSystemsPattern"/>
         <ns1:annotatedTarget rdf:resource="&ns3;ImplicitInvocationPattern"/>
         <ns1:annotatedProperty rdf:resource="&ns1;sameAs"/>
     </ns1:Axiom>
     <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Avgeriou40Resource"/>
+        <resourceAuthor rdf:resource="&ns3;Avgeriou50Resource"/>
         <ns1:annotatedSource rdf:resource="&ns3;EventSystemsPattern"/>
         <ns1:annotatedTarget rdf:resource="&ns3;ImplicitInvocationPattern"/>
         <ns1:annotatedProperty rdf:resource="&ns1;sameAs"/>
@@ -6252,13 +6290,13 @@
         <isChildOf rdf:resource="&ns3;IndependentComponentsStructure"/>
     </ns1:NamedIndividual>
     <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Avgeriou42Resource"/>
+        <resourceAuthor rdf:resource="&ns3;Avgeriou17Resource"/>
         <ns1:annotatedSource rdf:resource="&ns3;CommunicatingProcessesImplStructure"/>
         <ns1:annotatedTarget rdf:resource="&ns3;ExplicitInvocationImplStructure"/>
         <ns1:annotatedProperty rdf:resource="&ns1;sameAs"/>
     </ns1:Axiom>
     <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Avgeriou17Resource"/>
+        <resourceAuthor rdf:resource="&ns3;Avgeriou42Resource"/>
         <ns1:annotatedSource rdf:resource="&ns3;CommunicatingProcessesImplStructure"/>
         <ns1:annotatedTarget rdf:resource="&ns3;ExplicitInvocationImplStructure"/>
         <ns1:annotatedProperty rdf:resource="&ns1;sameAs"/>
@@ -6281,13 +6319,13 @@
         <belongsTo rdf:resource="&ns3;ExplicitInvocationPattern"/>
     </ns1:NamedIndividual>
     <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Avgeriou19Resource"/>
+        <resourceAuthor rdf:resource="&ns3;Avgeriou43Resource"/>
         <ns1:annotatedSource rdf:resource="&ns3;CommunicatingProcessesImplView"/>
         <ns1:annotatedTarget rdf:resource="&ns3;ExplicitInvocationImplView"/>
         <ns1:annotatedProperty rdf:resource="&ns1;sameAs"/>
     </ns1:Axiom>
     <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Avgeriou43Resource"/>
+        <resourceAuthor rdf:resource="&ns3;Avgeriou19Resource"/>
         <ns1:annotatedSource rdf:resource="&ns3;CommunicatingProcessesImplView"/>
         <ns1:annotatedTarget rdf:resource="&ns3;ExplicitInvocationImplView"/>
         <ns1:annotatedProperty rdf:resource="&ns1;sameAs"/>
@@ -6308,13 +6346,13 @@
         <canApply rdf:resource="&ns3;ExplicitInvocationPattern"/>
     </ns1:NamedIndividual>
     <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Avgeriou44Resource"/>
+        <resourceAuthor rdf:resource="&ns3;Avgeriou20Resource"/>
         <ns1:annotatedSource rdf:resource="&ns3;CommunicatingProcessesImplViewpoint"/>
         <ns1:annotatedTarget rdf:resource="&ns3;ExplicitInvocationImplViewpoint"/>
         <ns1:annotatedProperty rdf:resource="&ns1;sameAs"/>
     </ns1:Axiom>
     <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Avgeriou20Resource"/>
+        <resourceAuthor rdf:resource="&ns3;Avgeriou44Resource"/>
         <ns1:annotatedSource rdf:resource="&ns3;CommunicatingProcessesImplViewpoint"/>
         <ns1:annotatedTarget rdf:resource="&ns3;ExplicitInvocationImplViewpoint"/>
         <ns1:annotatedProperty rdf:resource="&ns1;sameAs"/>
@@ -6421,10 +6459,10 @@
         <isAlternativeTo rdf:resource="&ns3;RemotePattern"/>
     </ns1:NamedIndividual>
     <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Bushmann22Resource"/>
+        <resourceAuthor rdf:resource="&ns3;Bushmann20Resource"/>
         <ns1:annotatedSource rdf:resource="&ns3;ForwarderReceiverPattern"/>
-        <ns1:annotatedTarget rdf:resource="&ns3;RemotePattern"/>
-        <ns1:annotatedProperty rdf:resource="&ns3;isAlternativeTo"/>
+        <ns1:annotatedTarget rdf:resource="&ns3;Pattern"/>
+        <ns1:annotatedProperty rdf:resource="&rdf;type"/>
     </ns1:Axiom>
     <ns1:Axiom>
         <resourceAuthor rdf:resource="&ns3;Bushmann21Resource"/>
@@ -6433,10 +6471,10 @@
         <ns1:annotatedProperty rdf:resource="&ns3;isUsedIn"/>
     </ns1:Axiom>
     <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Bushmann20Resource"/>
+        <resourceAuthor rdf:resource="&ns3;Bushmann22Resource"/>
         <ns1:annotatedSource rdf:resource="&ns3;ForwarderReceiverPattern"/>
-        <ns1:annotatedTarget rdf:resource="&ns3;Pattern"/>
-        <ns1:annotatedProperty rdf:resource="&rdf;type"/>
+        <ns1:annotatedTarget rdf:resource="&ns3;RemotePattern"/>
+        <ns1:annotatedProperty rdf:resource="&ns3;isAlternativeTo"/>
     </ns1:Axiom>
     
 
@@ -6962,13 +7000,13 @@
         <isParentOf rdf:resource="&ns3;PublisherSubscriberImplStructure"/>
     </ns1:NamedIndividual>
     <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Avgeriou47Resource"/>
+        <resourceAuthor rdf:resource="&ns3;Avgeriou36Resource"/>
         <ns1:annotatedSource rdf:resource="&ns3;EventSystemsImplStructure"/>
         <ns1:annotatedTarget rdf:resource="&ns3;ImplicitInvocationImplStructure"/>
         <ns1:annotatedProperty rdf:resource="&ns1;sameAs"/>
     </ns1:Axiom>
     <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Avgeriou36Resource"/>
+        <resourceAuthor rdf:resource="&ns3;Avgeriou47Resource"/>
         <ns1:annotatedSource rdf:resource="&ns3;EventSystemsImplStructure"/>
         <ns1:annotatedTarget rdf:resource="&ns3;ImplicitInvocationImplStructure"/>
         <ns1:annotatedProperty rdf:resource="&ns1;sameAs"/>
@@ -6997,16 +7035,16 @@
         <ns1:annotatedProperty rdf:resource="&ns1;sameAs"/>
     </ns1:Axiom>
     <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Clements23Resource"/>
-        <ns1:annotatedSource rdf:resource="&ns3;ImplicitInvocationImplView"/>
-        <ns1:annotatedTarget rdf:resource="&ns3;PublisherSubscriberImplView"/>
-        <ns1:annotatedProperty rdf:resource="&ns3;isChildOf"/>
-    </ns1:Axiom>
-    <ns1:Axiom>
         <resourceAuthor rdf:resource="&ns3;Avgeriou38Resource"/>
         <ns1:annotatedSource rdf:resource="&ns3;EventSystemsImplView"/>
         <ns1:annotatedTarget rdf:resource="&ns3;ImplicitInvocationImplView"/>
         <ns1:annotatedProperty rdf:resource="&ns1;sameAs"/>
+    </ns1:Axiom>
+    <ns1:Axiom>
+        <resourceAuthor rdf:resource="&ns3;Clements23Resource"/>
+        <ns1:annotatedSource rdf:resource="&ns3;ImplicitInvocationImplView"/>
+        <ns1:annotatedTarget rdf:resource="&ns3;PublisherSubscriberImplView"/>
+        <ns1:annotatedProperty rdf:resource="&ns3;isChildOf"/>
     </ns1:Axiom>
     
 
@@ -7061,10 +7099,10 @@
         <isCombinableWith rdf:resource="&ns3;SharedRepositoryPattern"/>
     </ns1:NamedIndividual>
     <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Avgeriou50Resource"/>
-        <ns1:annotatedSource rdf:resource="&ns3;EventSystemsPattern"/>
-        <ns1:annotatedTarget rdf:resource="&ns3;ImplicitInvocationPattern"/>
-        <ns1:annotatedProperty rdf:resource="&ns1;sameAs"/>
+        <resourceAuthor rdf:resource="&ns3;Clements24Resource"/>
+        <ns1:annotatedSource rdf:resource="&ns3;ImplicitInvocationPattern"/>
+        <ns1:annotatedTarget rdf:resource="&ns3;PeerToPeerPattern"/>
+        <ns1:annotatedProperty rdf:resource="&ns3;isCombinableWith"/>
     </ns1:Axiom>
     <ns1:Axiom>
         <resourceAuthor rdf:resource="&ns3;Clements25Resource"/>
@@ -7073,13 +7111,13 @@
         <ns1:annotatedProperty rdf:resource="&rdf;type"/>
     </ns1:Axiom>
     <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Clements24Resource"/>
-        <ns1:annotatedSource rdf:resource="&ns3;ImplicitInvocationPattern"/>
-        <ns1:annotatedTarget rdf:resource="&ns3;PeerToPeerPattern"/>
-        <ns1:annotatedProperty rdf:resource="&ns3;isCombinableWith"/>
+        <resourceAuthor rdf:resource="&ns3;Avgeriou40Resource"/>
+        <ns1:annotatedSource rdf:resource="&ns3;EventSystemsPattern"/>
+        <ns1:annotatedTarget rdf:resource="&ns3;ImplicitInvocationPattern"/>
+        <ns1:annotatedProperty rdf:resource="&ns1;sameAs"/>
     </ns1:Axiom>
     <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Avgeriou40Resource"/>
+        <resourceAuthor rdf:resource="&ns3;Avgeriou50Resource"/>
         <ns1:annotatedSource rdf:resource="&ns3;EventSystemsPattern"/>
         <ns1:annotatedTarget rdf:resource="&ns3;ImplicitInvocationPattern"/>
         <ns1:annotatedProperty rdf:resource="&ns1;sameAs"/>
@@ -7128,24 +7166,6 @@
         <augments rdf:resource="&ns3;ReflectionPattern"/>
     </ns1:NamedIndividual>
     <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Bass46Resource"/>
-        <ns1:annotatedSource rdf:resource="&ns3;IncreaseSemanticCoherenceTactic"/>
-        <ns1:annotatedTarget rdf:resource="&ns3;PipesAndFiltersPattern"/>
-        <ns1:annotatedProperty rdf:resource="&ns3;augments"/>
-    </ns1:Axiom>
-    <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Bass41Resource"/>
-        <ns1:annotatedTarget rdf:resource="&ns3;BlackboardPattern"/>
-        <ns1:annotatedSource rdf:resource="&ns3;IncreaseSemanticCoherenceTactic"/>
-        <ns1:annotatedProperty rdf:resource="&ns3;augments"/>
-    </ns1:Axiom>
-    <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Bass48Resource"/>
-        <ns1:annotatedSource rdf:resource="&ns3;IncreaseSemanticCoherenceTactic"/>
-        <ns1:annotatedTarget rdf:resource="&ns3;ReflectionPattern"/>
-        <ns1:annotatedProperty rdf:resource="&ns3;augments"/>
-    </ns1:Axiom>
-    <ns1:Axiom>
         <resourceAuthor rdf:resource="&ns3;Bass39Resource"/>
         <ns1:annotatedSource rdf:resource="&ns3;IncreaseSemanticCoherenceTactic"/>
         <ns1:annotatedTarget rdf:resource="&ns3;LayeredArchitecturePattern"/>
@@ -7158,15 +7178,21 @@
         <ns1:annotatedProperty rdf:resource="&rdf;type"/>
     </ns1:Axiom>
     <ns1:Axiom>
+        <resourceAuthor rdf:resource="&ns3;Bass41Resource"/>
+        <ns1:annotatedTarget rdf:resource="&ns3;BlackboardPattern"/>
+        <ns1:annotatedSource rdf:resource="&ns3;IncreaseSemanticCoherenceTactic"/>
+        <ns1:annotatedProperty rdf:resource="&ns3;augments"/>
+    </ns1:Axiom>
+    <ns1:Axiom>
         <resourceAuthor rdf:resource="&ns3;Bass44Resource"/>
         <ns1:annotatedTarget rdf:resource="&ns3;IncreaseCohesionTactic"/>
         <ns1:annotatedSource rdf:resource="&ns3;IncreaseSemanticCoherenceTactic"/>
         <ns1:annotatedProperty rdf:resource="&ns3;isChildOf"/>
     </ns1:Axiom>
     <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Bass45Resource"/>
+        <resourceAuthor rdf:resource="&ns3;Bass47Resource"/>
         <ns1:annotatedSource rdf:resource="&ns3;IncreaseSemanticCoherenceTactic"/>
-        <ns1:annotatedTarget rdf:resource="&ns3;ModelViewControllerPattern"/>
+        <ns1:annotatedTarget rdf:resource="&ns3;MicrokernelPattern"/>
         <ns1:annotatedProperty rdf:resource="&ns3;augments"/>
     </ns1:Axiom>
     <ns1:Axiom>
@@ -7176,15 +7202,27 @@
         <ns1:annotatedProperty rdf:resource="&ns3;augments"/>
     </ns1:Axiom>
     <ns1:Axiom>
+        <resourceAuthor rdf:resource="&ns3;Bass46Resource"/>
+        <ns1:annotatedSource rdf:resource="&ns3;IncreaseSemanticCoherenceTactic"/>
+        <ns1:annotatedTarget rdf:resource="&ns3;PipesAndFiltersPattern"/>
+        <ns1:annotatedProperty rdf:resource="&ns3;augments"/>
+    </ns1:Axiom>
+    <ns1:Axiom>
+        <resourceAuthor rdf:resource="&ns3;Bass48Resource"/>
+        <ns1:annotatedSource rdf:resource="&ns3;IncreaseSemanticCoherenceTactic"/>
+        <ns1:annotatedTarget rdf:resource="&ns3;ReflectionPattern"/>
+        <ns1:annotatedProperty rdf:resource="&ns3;augments"/>
+    </ns1:Axiom>
+    <ns1:Axiom>
         <resourceAuthor rdf:resource="&ns3;Bass42Resource"/>
         <ns1:annotatedSource rdf:resource="&ns3;IncreaseSemanticCoherenceTactic"/>
         <ns1:annotatedTarget rdf:resource="&ns3;PresentationAbstractionControlPattern"/>
         <ns1:annotatedProperty rdf:resource="&ns3;augments"/>
     </ns1:Axiom>
     <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Bass47Resource"/>
+        <resourceAuthor rdf:resource="&ns3;Bass45Resource"/>
         <ns1:annotatedSource rdf:resource="&ns3;IncreaseSemanticCoherenceTactic"/>
-        <ns1:annotatedTarget rdf:resource="&ns3;MicrokernelPattern"/>
+        <ns1:annotatedTarget rdf:resource="&ns3;ModelViewControllerPattern"/>
         <ns1:annotatedProperty rdf:resource="&ns3;augments"/>
     </ns1:Axiom>
     
@@ -7280,16 +7318,16 @@
         <isUsedIn rdf:resource="&ns3;VirtualMachinesPattern"/>
     </ns1:NamedIndividual>
     <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Avgeriou52Resource"/>
-        <ns1:annotatedSource rdf:resource="&ns3;IndirectionLayerPattern"/>
-        <ns1:annotatedTarget rdf:resource="&ns3;Pattern"/>
-        <ns1:annotatedProperty rdf:resource="&rdf;type"/>
-    </ns1:Axiom>
-    <ns1:Axiom>
         <resourceAuthor rdf:resource="&ns3;Avgeriou53Resource"/>
         <ns1:annotatedSource rdf:resource="&ns3;IndirectionLayerPattern"/>
         <ns1:annotatedTarget rdf:resource="&ns3;VirtualMachinesPattern"/>
         <ns1:annotatedProperty rdf:resource="&ns3;isUsedIn"/>
+    </ns1:Axiom>
+    <ns1:Axiom>
+        <resourceAuthor rdf:resource="&ns3;Avgeriou52Resource"/>
+        <ns1:annotatedSource rdf:resource="&ns3;IndirectionLayerPattern"/>
+        <ns1:annotatedTarget rdf:resource="&ns3;Pattern"/>
+        <ns1:annotatedProperty rdf:resource="&rdf;type"/>
     </ns1:Axiom>
     
 
@@ -7560,10 +7598,9 @@
         <belongsTo rdf:resource="&ns3;ModuleViewtype"/>
     </ns1:NamedIndividual>
     <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Bass50Resource"/>
-        <resourceAuthor rdf:resource="&ns3;Clements26Resource"/>
+        <resourceAuthor rdf:resource="&ns3;Avgeriou58Resource"/>
         <ns1:annotatedSource rdf:resource="&ns3;LayeredArchitectureImplView"/>
-        <ns1:annotatedTarget rdf:resource="&ns3;ModuleViewtype"/>
+        <ns1:annotatedTarget rdf:resource="&ns3;LayeredViewtype"/>
         <ns1:annotatedProperty rdf:resource="&ns3;belongsTo"/>
     </ns1:Axiom>
     <ns1:Axiom>
@@ -7573,9 +7610,10 @@
         <ns1:annotatedProperty rdf:resource="&ns3;addresses"/>
     </ns1:Axiom>
     <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Avgeriou58Resource"/>
+        <resourceAuthor rdf:resource="&ns3;Bass50Resource"/>
+        <resourceAuthor rdf:resource="&ns3;Clements26Resource"/>
         <ns1:annotatedSource rdf:resource="&ns3;LayeredArchitectureImplView"/>
-        <ns1:annotatedTarget rdf:resource="&ns3;LayeredViewtype"/>
+        <ns1:annotatedTarget rdf:resource="&ns3;ModuleViewtype"/>
         <ns1:annotatedProperty rdf:resource="&ns3;belongsTo"/>
     </ns1:Axiom>
     
@@ -7629,12 +7667,6 @@
         <isUsedIn rdf:resource="&ns3;VirtualMachinesPattern"/>
     </ns1:NamedIndividual>
     <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Bushmann28Resource"/>
-        <ns1:annotatedSource rdf:resource="&ns3;LayeredArchitecturePattern"/>
-        <ns1:annotatedTarget rdf:resource="&ns3;PresentationAbstractionControlPattern"/>
-        <ns1:annotatedProperty rdf:resource="&ns3;isUsedIn"/>
-    </ns1:Axiom>
-    <ns1:Axiom>
         <resourceAuthor rdf:resource="&ns3;Bushmann26Resource"/>
         <ns1:annotatedSource rdf:resource="&ns3;LayeredArchitecturePattern"/>
         <ns1:annotatedTarget rdf:resource="&ns3;PipesAndFiltersPattern"/>
@@ -7656,6 +7688,12 @@
         <ns1:annotatedSource rdf:resource="&ns3;LayeredArchitecturePattern"/>
         <ns1:annotatedTarget rdf:resource="&ns3;MicrokernelPattern"/>
         <ns1:annotatedProperty rdf:resource="&ns3;isAlternativeTo"/>
+    </ns1:Axiom>
+    <ns1:Axiom>
+        <resourceAuthor rdf:resource="&ns3;Bushmann28Resource"/>
+        <ns1:annotatedSource rdf:resource="&ns3;LayeredArchitecturePattern"/>
+        <ns1:annotatedTarget rdf:resource="&ns3;PresentationAbstractionControlPattern"/>
+        <ns1:annotatedProperty rdf:resource="&ns3;isUsedIn"/>
     </ns1:Axiom>
     
 
@@ -8248,16 +8286,16 @@
         <isAlternativeTo rdf:resource="&ns3;RemotePattern"/>
     </ns1:NamedIndividual>
     <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Bushmann32Resource"/>
-        <ns1:annotatedSource rdf:resource="&ns3;MediaterPattern"/>
-        <ns1:annotatedTarget rdf:resource="&ns3;Pattern"/>
-        <ns1:annotatedProperty rdf:resource="&rdf;type"/>
-    </ns1:Axiom>
-    <ns1:Axiom>
         <ns1:annotatedTarget rdf:resource="&ns3;BrokerPattern"/>
         <resourceAuthor rdf:resource="&ns3;Bushmann31Resource"/>
         <ns1:annotatedSource rdf:resource="&ns3;MediaterPattern"/>
         <ns1:annotatedProperty rdf:resource="&ns3;isAlternativeTo"/>
+    </ns1:Axiom>
+    <ns1:Axiom>
+        <resourceAuthor rdf:resource="&ns3;Bushmann32Resource"/>
+        <ns1:annotatedSource rdf:resource="&ns3;MediaterPattern"/>
+        <ns1:annotatedTarget rdf:resource="&ns3;Pattern"/>
+        <ns1:annotatedProperty rdf:resource="&rdf;type"/>
     </ns1:Axiom>
     
 
@@ -8423,13 +8461,13 @@
         <belongsTo rdf:resource="&ns3;MessagingPattern"/>
     </ns1:NamedIndividual>
     <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Avgeriou67Resource"/>
+        <resourceAuthor rdf:resource="&ns3;Avgeriou60Resource"/>
         <ns1:annotatedSource rdf:resource="&ns3;MessageQueueingImplPurpose"/>
         <ns1:annotatedTarget rdf:resource="&ns3;MessagingImplPurpose"/>
         <ns1:annotatedProperty rdf:resource="&ns1;sameAs"/>
     </ns1:Axiom>
     <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Avgeriou60Resource"/>
+        <resourceAuthor rdf:resource="&ns3;Avgeriou67Resource"/>
         <ns1:annotatedSource rdf:resource="&ns3;MessageQueueingImplPurpose"/>
         <ns1:annotatedTarget rdf:resource="&ns3;MessagingImplPurpose"/>
         <ns1:annotatedProperty rdf:resource="&ns1;sameAs"/>
@@ -8476,6 +8514,12 @@
         <belongsTo rdf:resource="&ns3;MessagingPattern"/>
     </ns1:NamedIndividual>
     <ns1:Axiom>
+        <resourceAuthor rdf:resource="&ns3;Avgeriou62Resource"/>
+        <ns1:annotatedTarget rdf:resource="&ns3;DistributionViewtype"/>
+        <ns1:annotatedSource rdf:resource="&ns3;MessageQueueingImplView"/>
+        <ns1:annotatedProperty rdf:resource="&ns3;belongsTo"/>
+    </ns1:Axiom>
+    <ns1:Axiom>
         <resourceAuthor rdf:resource="&ns3;Avgeriou63Resource"/>
         <ns1:annotatedSource rdf:resource="&ns3;MessageQueueingImplView"/>
         <ns1:annotatedTarget rdf:resource="&ns3;MessagingImplView"/>
@@ -8486,12 +8530,6 @@
         <ns1:annotatedSource rdf:resource="&ns3;MessageQueueingImplView"/>
         <ns1:annotatedTarget rdf:resource="&ns3;MessagingImplView"/>
         <ns1:annotatedProperty rdf:resource="&ns1;sameAs"/>
-    </ns1:Axiom>
-    <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Avgeriou62Resource"/>
-        <ns1:annotatedTarget rdf:resource="&ns3;DistributionViewtype"/>
-        <ns1:annotatedSource rdf:resource="&ns3;MessageQueueingImplView"/>
-        <ns1:annotatedProperty rdf:resource="&ns3;belongsTo"/>
     </ns1:Axiom>
     
 
@@ -8510,13 +8548,13 @@
         <canApply rdf:resource="&ns3;MessagingPattern"/>
     </ns1:NamedIndividual>
     <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Avgeriou64Resource"/>
+        <resourceAuthor rdf:resource="&ns3;Avgeriou70Resource"/>
         <ns1:annotatedSource rdf:resource="&ns3;MessageQueueingImplViewpoint"/>
         <ns1:annotatedTarget rdf:resource="&ns3;MessagingImplViewpoint"/>
         <ns1:annotatedProperty rdf:resource="&ns1;sameAs"/>
     </ns1:Axiom>
     <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Avgeriou70Resource"/>
+        <resourceAuthor rdf:resource="&ns3;Avgeriou64Resource"/>
         <ns1:annotatedSource rdf:resource="&ns3;MessageQueueingImplViewpoint"/>
         <ns1:annotatedTarget rdf:resource="&ns3;MessagingImplViewpoint"/>
         <ns1:annotatedProperty rdf:resource="&ns1;sameAs"/>
@@ -8540,12 +8578,6 @@
         <ns1:sameAs rdf:resource="&ns3;MessagingPattern"/>
     </ns1:NamedIndividual>
     <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Avgeriou65Resource"/>
-        <ns1:annotatedSource rdf:resource="&ns3;MessageQueueingPattern"/>
-        <ns1:annotatedTarget rdf:resource="&ns3;Pattern"/>
-        <ns1:annotatedProperty rdf:resource="&rdf;type"/>
-    </ns1:Axiom>
-    <ns1:Axiom>
         <resourceAuthor rdf:resource="&ns3;Avgeriou66Resource"/>
         <ns1:annotatedSource rdf:resource="&ns3;MessageQueueingPattern"/>
         <ns1:annotatedTarget rdf:resource="&ns3;MessagingPattern"/>
@@ -8556,6 +8588,12 @@
         <ns1:annotatedSource rdf:resource="&ns3;MessageQueueingPattern"/>
         <ns1:annotatedTarget rdf:resource="&ns3;MessagingPattern"/>
         <ns1:annotatedProperty rdf:resource="&ns1;sameAs"/>
+    </ns1:Axiom>
+    <ns1:Axiom>
+        <resourceAuthor rdf:resource="&ns3;Avgeriou65Resource"/>
+        <ns1:annotatedSource rdf:resource="&ns3;MessageQueueingPattern"/>
+        <ns1:annotatedTarget rdf:resource="&ns3;Pattern"/>
+        <ns1:annotatedProperty rdf:resource="&rdf;type"/>
     </ns1:Axiom>
     
 
@@ -8574,13 +8612,13 @@
         <belongsTo rdf:resource="&ns3;MessagingPattern"/>
     </ns1:NamedIndividual>
     <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Avgeriou67Resource"/>
+        <resourceAuthor rdf:resource="&ns3;Avgeriou60Resource"/>
         <ns1:annotatedSource rdf:resource="&ns3;MessageQueueingImplPurpose"/>
         <ns1:annotatedTarget rdf:resource="&ns3;MessagingImplPurpose"/>
         <ns1:annotatedProperty rdf:resource="&ns1;sameAs"/>
     </ns1:Axiom>
     <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Avgeriou60Resource"/>
+        <resourceAuthor rdf:resource="&ns3;Avgeriou67Resource"/>
         <ns1:annotatedSource rdf:resource="&ns3;MessageQueueingImplPurpose"/>
         <ns1:annotatedTarget rdf:resource="&ns3;MessagingImplPurpose"/>
         <ns1:annotatedProperty rdf:resource="&ns1;sameAs"/>
@@ -8652,13 +8690,13 @@
         <canApply rdf:resource="&ns3;MessagingPattern"/>
     </ns1:NamedIndividual>
     <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Avgeriou64Resource"/>
+        <resourceAuthor rdf:resource="&ns3;Avgeriou70Resource"/>
         <ns1:annotatedSource rdf:resource="&ns3;MessageQueueingImplViewpoint"/>
         <ns1:annotatedTarget rdf:resource="&ns3;MessagingImplViewpoint"/>
         <ns1:annotatedProperty rdf:resource="&ns1;sameAs"/>
     </ns1:Axiom>
     <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Avgeriou70Resource"/>
+        <resourceAuthor rdf:resource="&ns3;Avgeriou64Resource"/>
         <ns1:annotatedSource rdf:resource="&ns3;MessageQueueingImplViewpoint"/>
         <ns1:annotatedTarget rdf:resource="&ns3;MessagingImplViewpoint"/>
         <ns1:annotatedProperty rdf:resource="&ns1;sameAs"/>
@@ -8681,16 +8719,16 @@
         <isApplicableIn rdf:resource="&ns3;MessagingImplViewpoint"/>
     </ns1:NamedIndividual>
     <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Avgeriou72Resource"/>
-        <ns1:annotatedSource rdf:resource="&ns3;MessagingPattern"/>
-        <ns1:annotatedTarget rdf:resource="&ns3;Pattern"/>
-        <ns1:annotatedProperty rdf:resource="&rdf;type"/>
-    </ns1:Axiom>
-    <ns1:Axiom>
         <resourceAuthor rdf:resource="&ns3;Avgeriou66Resource"/>
         <ns1:annotatedSource rdf:resource="&ns3;MessageQueueingPattern"/>
         <ns1:annotatedTarget rdf:resource="&ns3;MessagingPattern"/>
         <ns1:annotatedProperty rdf:resource="&ns1;sameAs"/>
+    </ns1:Axiom>
+    <ns1:Axiom>
+        <resourceAuthor rdf:resource="&ns3;Avgeriou72Resource"/>
+        <ns1:annotatedSource rdf:resource="&ns3;MessagingPattern"/>
+        <ns1:annotatedTarget rdf:resource="&ns3;Pattern"/>
+        <ns1:annotatedProperty rdf:resource="&rdf;type"/>
     </ns1:Axiom>
     <ns1:Axiom>
         <resourceAuthor rdf:resource="&ns3;Avgeriou71Resource"/>
@@ -8718,6 +8756,12 @@
         <isChildOf rdf:resource="&ns3;StructurePurpose"/>
     </ns1:NamedIndividual>
     <ns1:Axiom>
+        <resourceAuthor rdf:resource="&ns3;Bushmann35Resource"/>
+        <ns1:annotatedTarget rdf:resource="&ns3;DistributedSystemPurpose"/>
+        <ns1:annotatedSource rdf:resource="&ns3;MicrokernelImplPurpose"/>
+        <ns1:annotatedProperty rdf:resource="&ns3;isChildOf"/>
+    </ns1:Axiom>
+    <ns1:Axiom>
         <resourceAuthor rdf:resource="&ns3;Bushmann36Resource"/>
         <ns1:annotatedTarget rdf:resource="&ns3;LayeredArchitectureImplPurpose"/>
         <ns1:annotatedSource rdf:resource="&ns3;MicrokernelImplPurpose"/>
@@ -8726,12 +8770,6 @@
     <ns1:Axiom>
         <ns1:annotatedTarget rdf:resource="&ns3;AdaptableSystemPurpose"/>
         <resourceAuthor rdf:resource="&ns3;Bushmann37Resource"/>
-        <ns1:annotatedSource rdf:resource="&ns3;MicrokernelImplPurpose"/>
-        <ns1:annotatedProperty rdf:resource="&ns3;isChildOf"/>
-    </ns1:Axiom>
-    <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Bushmann35Resource"/>
-        <ns1:annotatedTarget rdf:resource="&ns3;DistributedSystemPurpose"/>
         <ns1:annotatedSource rdf:resource="&ns3;MicrokernelImplPurpose"/>
         <ns1:annotatedProperty rdf:resource="&ns3;isChildOf"/>
     </ns1:Axiom>
@@ -8760,16 +8798,16 @@
         <addresses rdf:resource="&ns3;ModifiabilityQualityAttribute"/>
     </ns1:NamedIndividual>
     <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Bass58Resource"/>
-        <ns1:annotatedSource rdf:resource="&ns3;MicrokernelImplView"/>
-        <ns1:annotatedTarget rdf:resource="&ns3;ModifiabilityQualityAttribute"/>
-        <ns1:annotatedProperty rdf:resource="&ns3;addresses"/>
-    </ns1:Axiom>
-    <ns1:Axiom>
         <ns1:annotatedTarget rdf:resource="&ns3;AdaptationViewtype"/>
         <resourceAuthor rdf:resource="&ns3;Avgeriou73Resource"/>
         <ns1:annotatedSource rdf:resource="&ns3;MicrokernelImplView"/>
         <ns1:annotatedProperty rdf:resource="&ns3;belongsTo"/>
+    </ns1:Axiom>
+    <ns1:Axiom>
+        <resourceAuthor rdf:resource="&ns3;Bass58Resource"/>
+        <ns1:annotatedSource rdf:resource="&ns3;MicrokernelImplView"/>
+        <ns1:annotatedTarget rdf:resource="&ns3;ModifiabilityQualityAttribute"/>
+        <ns1:annotatedProperty rdf:resource="&ns3;addresses"/>
     </ns1:Axiom>
     
 
@@ -8948,16 +8986,16 @@
         <belongsTo rdf:resource="&ns3;UserInteractionViewtype"/>
     </ns1:NamedIndividual>
     <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Bass60Resource"/>
-        <ns1:annotatedSource rdf:resource="&ns3;ModelViewControllerImplView"/>
-        <ns1:annotatedTarget rdf:resource="&ns3;ModifiabilityQualityAttribute"/>
-        <ns1:annotatedProperty rdf:resource="&ns3;addresses"/>
-    </ns1:Axiom>
-    <ns1:Axiom>
         <resourceAuthor rdf:resource="&ns3;Bass61Resource"/>
         <ns1:annotatedTarget rdf:resource="&ns3;ComponentConnectorViewtype"/>
         <ns1:annotatedSource rdf:resource="&ns3;ModelViewControllerImplView"/>
         <ns1:annotatedProperty rdf:resource="&ns3;belongsTo"/>
+    </ns1:Axiom>
+    <ns1:Axiom>
+        <resourceAuthor rdf:resource="&ns3;Bass60Resource"/>
+        <ns1:annotatedSource rdf:resource="&ns3;ModelViewControllerImplView"/>
+        <ns1:annotatedTarget rdf:resource="&ns3;ModifiabilityQualityAttribute"/>
+        <ns1:annotatedProperty rdf:resource="&ns3;addresses"/>
     </ns1:Axiom>
     <ns1:Axiom>
         <resourceAuthor rdf:resource="&ns3;Avgeriou74Resource"/>
@@ -9385,18 +9423,18 @@
         <isCombinableWith rdf:resource="&ns3;PublisherSubscriberPattern"/>
     </ns1:NamedIndividual>
     <ns1:Axiom>
+        <resourceAuthor rdf:resource="&ns3;Clements32Resource"/>
+        <ns1:annotatedSource rdf:resource="&ns3;ObjectOrientedPattern"/>
+        <ns1:annotatedTarget rdf:resource="&ns3;PublisherSubscriberPattern"/>
+        <ns1:annotatedProperty rdf:resource="&ns3;isCombinableWith"/>
+    </ns1:Axiom>
+    <ns1:Axiom>
         <resourceAuthor rdf:resource="&ns3;Clements33Resource"/>
         <resourceAuthor rdf:resource="&ns3;MSDN15Resource"/>
         <ns1:annotatedSource rdf:resource="&ns3;ObjectOrientedPattern"/>
         <ns1:annotatedTarget rdf:resource="&ns3;Pattern"/>
         <resourceAuthor rdf:resource="&ns3;Shaw29Resource"/>
         <ns1:annotatedProperty rdf:resource="&rdf;type"/>
-    </ns1:Axiom>
-    <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Clements32Resource"/>
-        <ns1:annotatedSource rdf:resource="&ns3;ObjectOrientedPattern"/>
-        <ns1:annotatedTarget rdf:resource="&ns3;PublisherSubscriberPattern"/>
-        <ns1:annotatedProperty rdf:resource="&ns3;isCombinableWith"/>
     </ns1:Axiom>
     
 
@@ -9489,16 +9527,16 @@
         <ns1:annotatedProperty rdf:resource="&ns3;augments"/>
     </ns1:Axiom>
     <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Bass69Resource"/>
-        <ns1:annotatedSource rdf:resource="&ns3;OrchestrateTactic"/>
-        <ns1:annotatedTarget rdf:resource="&ns3;Tactic"/>
-        <ns1:annotatedProperty rdf:resource="&rdf;type"/>
-    </ns1:Axiom>
-    <ns1:Axiom>
         <resourceAuthor rdf:resource="&ns3;Bass70Resource"/>
         <ns1:annotatedTarget rdf:resource="&ns3;InteroperabilityQualityAttribute"/>
         <ns1:annotatedSource rdf:resource="&ns3;OrchestrateTactic"/>
         <ns1:annotatedProperty rdf:resource="&ns3;achieves"/>
+    </ns1:Axiom>
+    <ns1:Axiom>
+        <resourceAuthor rdf:resource="&ns3;Bass69Resource"/>
+        <ns1:annotatedSource rdf:resource="&ns3;OrchestrateTactic"/>
+        <ns1:annotatedTarget rdf:resource="&ns3;Tactic"/>
+        <ns1:annotatedProperty rdf:resource="&rdf;type"/>
     </ns1:Axiom>
     
 
@@ -9545,14 +9583,14 @@
         <belongsTo rdf:resource="&ns3;PeerToPeerPattern"/>
     </ns1:NamedIndividual>
     <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Avgeriou75Resource"/>
-        <ns1:annotatedTarget rdf:resource="&ns3;ComponentInteractionViewtype"/>
+        <resourceAuthor rdf:resource="&ns3;Bass71Resource"/>
+        <ns1:annotatedTarget rdf:resource="&ns3;ComponentConnectorViewtype"/>
         <ns1:annotatedSource rdf:resource="&ns3;PeerToPeerImplView"/>
         <ns1:annotatedProperty rdf:resource="&ns3;belongsTo"/>
     </ns1:Axiom>
     <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Bass71Resource"/>
-        <ns1:annotatedTarget rdf:resource="&ns3;ComponentConnectorViewtype"/>
+        <resourceAuthor rdf:resource="&ns3;Avgeriou75Resource"/>
+        <ns1:annotatedTarget rdf:resource="&ns3;ComponentInteractionViewtype"/>
         <ns1:annotatedSource rdf:resource="&ns3;PeerToPeerImplView"/>
         <ns1:annotatedProperty rdf:resource="&ns3;belongsTo"/>
     </ns1:Axiom>
@@ -9611,15 +9649,15 @@
         <isChildOf rdf:resource="&ns3;StructurePurpose"/>
     </ns1:NamedIndividual>
     <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Bushmann43Resource"/>
-        <ns1:annotatedTarget rdf:resource="&ns3;DistributedSystemPurpose"/>
-        <ns1:annotatedSource rdf:resource="&ns3;PipesAndFiltersImplPurpose"/>
-        <ns1:annotatedProperty rdf:resource="&ns3;isChildOf"/>
-    </ns1:Axiom>
-    <ns1:Axiom>
         <resourceAuthor rdf:resource="&ns3;Bushmann44Resource"/>
         <ns1:annotatedSource rdf:resource="&ns3;PipesAndFiltersImplPurpose"/>
         <ns1:annotatedTarget rdf:resource="&ns3;StructurePurpose"/>
+        <ns1:annotatedProperty rdf:resource="&ns3;isChildOf"/>
+    </ns1:Axiom>
+    <ns1:Axiom>
+        <resourceAuthor rdf:resource="&ns3;Bushmann43Resource"/>
+        <ns1:annotatedTarget rdf:resource="&ns3;DistributedSystemPurpose"/>
+        <ns1:annotatedSource rdf:resource="&ns3;PipesAndFiltersImplPurpose"/>
         <ns1:annotatedProperty rdf:resource="&ns3;isChildOf"/>
     </ns1:Axiom>
     
@@ -9656,6 +9694,12 @@
         <belongsTo rdf:resource="&ns3;PipesAndFiltersPattern"/>
     </ns1:NamedIndividual>
     <ns1:Axiom>
+        <resourceAuthor rdf:resource="&ns3;Clements36Resource"/>
+        <ns1:annotatedTarget rdf:resource="&ns3;DatastreamImplView"/>
+        <ns1:annotatedSource rdf:resource="&ns3;PipesAndFiltersImplView"/>
+        <ns1:annotatedProperty rdf:resource="&ns3;isChildOf"/>
+    </ns1:Axiom>
+    <ns1:Axiom>
         <resourceAuthor rdf:resource="&ns3;Avgeriou76Resource"/>
         <ns1:annotatedTarget rdf:resource="&ns3;DataflowViewtype"/>
         <ns1:annotatedSource rdf:resource="&ns3;PipesAndFiltersImplView"/>
@@ -9672,12 +9716,6 @@
         <ns1:annotatedTarget rdf:resource="&ns3;ModifiabilityQualityAttribute"/>
         <ns1:annotatedSource rdf:resource="&ns3;PipesAndFiltersImplView"/>
         <ns1:annotatedProperty rdf:resource="&ns3;addresses"/>
-    </ns1:Axiom>
-    <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Clements36Resource"/>
-        <ns1:annotatedTarget rdf:resource="&ns3;DatastreamImplView"/>
-        <ns1:annotatedSource rdf:resource="&ns3;PipesAndFiltersImplView"/>
-        <ns1:annotatedProperty rdf:resource="&ns3;isChildOf"/>
     </ns1:Axiom>
     
 
@@ -10005,16 +10043,16 @@
         <belongsTo rdf:resource="&ns3;UserInteractionViewtype"/>
     </ns1:NamedIndividual>
     <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Bass79Resource"/>
-        <ns1:annotatedTarget rdf:resource="&ns3;ModifiabilityQualityAttribute"/>
-        <ns1:annotatedSource rdf:resource="&ns3;PresentationAbstractionControlImplView"/>
-        <ns1:annotatedProperty rdf:resource="&ns3;addresses"/>
-    </ns1:Axiom>
-    <ns1:Axiom>
         <resourceAuthor rdf:resource="&ns3;Avgeriou77Resource"/>
         <ns1:annotatedSource rdf:resource="&ns3;PresentationAbstractionControlImplView"/>
         <ns1:annotatedTarget rdf:resource="&ns3;UserInteractionViewtype"/>
         <ns1:annotatedProperty rdf:resource="&ns3;belongsTo"/>
+    </ns1:Axiom>
+    <ns1:Axiom>
+        <resourceAuthor rdf:resource="&ns3;Bass79Resource"/>
+        <ns1:annotatedTarget rdf:resource="&ns3;ModifiabilityQualityAttribute"/>
+        <ns1:annotatedSource rdf:resource="&ns3;PresentationAbstractionControlImplView"/>
+        <ns1:annotatedProperty rdf:resource="&ns3;addresses"/>
     </ns1:Axiom>
     
 
@@ -10058,17 +10096,17 @@
         <uses rdf:resource="&ns3;VirtualMachinesPattern"/>
     </ns1:NamedIndividual>
     <ns1:Axiom>
+        <resourceAuthor rdf:resource="&ns3;Bushmann52Resource"/>
+        <ns1:annotatedTarget rdf:resource="&ns3;ModelViewControllerPattern"/>
+        <ns1:annotatedSource rdf:resource="&ns3;PresentationAbstractionControlPattern"/>
+        <ns1:annotatedProperty rdf:resource="&ns3;isAlternativeTo"/>
+    </ns1:Axiom>
+    <ns1:Axiom>
         <resourceAuthor rdf:resource="&ns3;Bushmann51Resource"/>
         <ns1:annotatedTarget rdf:resource="&ns3;Pattern"/>
         <ns1:annotatedSource rdf:resource="&ns3;PresentationAbstractionControlPattern"/>
         <resourceAuthor rdf:resource="&ns3;Wikipedia5Resource"/>
         <ns1:annotatedProperty rdf:resource="&rdf;type"/>
-    </ns1:Axiom>
-    <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Bushmann52Resource"/>
-        <ns1:annotatedTarget rdf:resource="&ns3;ModelViewControllerPattern"/>
-        <ns1:annotatedSource rdf:resource="&ns3;PresentationAbstractionControlPattern"/>
-        <ns1:annotatedProperty rdf:resource="&ns3;isAlternativeTo"/>
     </ns1:Axiom>
     
 
@@ -10341,15 +10379,15 @@
         <belongsTo rdf:resource="&ns3;PublisherSubscriberPattern"/>
     </ns1:NamedIndividual>
     <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Bass81Resource"/>
-        <resourceAuthor rdf:resource="&ns3;Clements40Resource"/>
-        <ns1:annotatedTarget rdf:resource="&ns3;ComponentConnectorViewtype"/>
+        <resourceAuthor rdf:resource="&ns3;Avgeriou78Resource"/>
+        <ns1:annotatedTarget rdf:resource="&ns3;ComponentInteractionViewtype"/>
         <ns1:annotatedSource rdf:resource="&ns3;PublisherSubscriberImplView"/>
         <ns1:annotatedProperty rdf:resource="&ns3;belongsTo"/>
     </ns1:Axiom>
     <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Avgeriou78Resource"/>
-        <ns1:annotatedTarget rdf:resource="&ns3;ComponentInteractionViewtype"/>
+        <resourceAuthor rdf:resource="&ns3;Bass81Resource"/>
+        <resourceAuthor rdf:resource="&ns3;Clements40Resource"/>
+        <ns1:annotatedTarget rdf:resource="&ns3;ComponentConnectorViewtype"/>
         <ns1:annotatedSource rdf:resource="&ns3;PublisherSubscriberImplView"/>
         <ns1:annotatedProperty rdf:resource="&ns3;belongsTo"/>
     </ns1:Axiom>
@@ -10405,20 +10443,20 @@
         <isChildOf rdf:resource="&ns3;ReduceCouplingTactic"/>
     </ns1:NamedIndividual>
     <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Bass84Resource"/>
-        <ns1:annotatedTarget rdf:resource="&ns3;BlackboardPattern"/>
+        <resourceAuthor rdf:resource="&ns3;Bass88Resource"/>
+        <ns1:annotatedTarget rdf:resource="&ns3;BrokerPattern"/>
         <ns1:annotatedSource rdf:resource="&ns3;RaiseAbstractionLevelTactic"/>
         <ns1:annotatedProperty rdf:resource="&ns3;augments"/>
     </ns1:Axiom>
     <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Bass86Resource"/>
-        <ns1:annotatedSource rdf:resource="&ns3;RaiseAbstractionLevelTactic"/>
-        <ns1:annotatedTarget rdf:resource="&ns3;Tactic"/>
-        <ns1:annotatedProperty rdf:resource="&rdf;type"/>
-    </ns1:Axiom>
-    <ns1:Axiom>
         <resourceAuthor rdf:resource="&ns3;Bass87Resource"/>
         <ns1:annotatedTarget rdf:resource="&ns3;LayeredArchitecturePattern"/>
+        <ns1:annotatedSource rdf:resource="&ns3;RaiseAbstractionLevelTactic"/>
+        <ns1:annotatedProperty rdf:resource="&ns3;augments"/>
+    </ns1:Axiom>
+    <ns1:Axiom>
+        <resourceAuthor rdf:resource="&ns3;Bass85Resource"/>
+        <ns1:annotatedTarget rdf:resource="&ns3;PresentationAbstractionControlPattern"/>
         <ns1:annotatedSource rdf:resource="&ns3;RaiseAbstractionLevelTactic"/>
         <ns1:annotatedProperty rdf:resource="&ns3;augments"/>
     </ns1:Axiom>
@@ -10429,16 +10467,16 @@
         <ns1:annotatedProperty rdf:resource="&ns3;isChildOf"/>
     </ns1:Axiom>
     <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Bass88Resource"/>
-        <ns1:annotatedTarget rdf:resource="&ns3;BrokerPattern"/>
+        <resourceAuthor rdf:resource="&ns3;Bass84Resource"/>
+        <ns1:annotatedTarget rdf:resource="&ns3;BlackboardPattern"/>
         <ns1:annotatedSource rdf:resource="&ns3;RaiseAbstractionLevelTactic"/>
         <ns1:annotatedProperty rdf:resource="&ns3;augments"/>
     </ns1:Axiom>
     <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Bass85Resource"/>
-        <ns1:annotatedTarget rdf:resource="&ns3;PresentationAbstractionControlPattern"/>
+        <resourceAuthor rdf:resource="&ns3;Bass86Resource"/>
         <ns1:annotatedSource rdf:resource="&ns3;RaiseAbstractionLevelTactic"/>
-        <ns1:annotatedProperty rdf:resource="&ns3;augments"/>
+        <ns1:annotatedTarget rdf:resource="&ns3;Tactic"/>
+        <ns1:annotatedProperty rdf:resource="&rdf;type"/>
     </ns1:Axiom>
     
 
@@ -10456,16 +10494,16 @@
         <isParentOf rdf:resource="&ns3;UseWrapperTactic"/>
     </ns1:NamedIndividual>
     <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Bass90Resource"/>
-        <ns1:annotatedSource rdf:resource="&ns3;ReduceCouplingTactic"/>
-        <ns1:annotatedTarget rdf:resource="&ns3;Tactic"/>
-        <ns1:annotatedProperty rdf:resource="&rdf;type"/>
-    </ns1:Axiom>
-    <ns1:Axiom>
         <resourceAuthor rdf:resource="&ns3;Bass89Resource"/>
         <ns1:annotatedTarget rdf:resource="&ns3;ModifiabilityQualityAttribute"/>
         <ns1:annotatedSource rdf:resource="&ns3;ReduceCouplingTactic"/>
         <ns1:annotatedProperty rdf:resource="&ns3;achieves"/>
+    </ns1:Axiom>
+    <ns1:Axiom>
+        <resourceAuthor rdf:resource="&ns3;Bass90Resource"/>
+        <ns1:annotatedSource rdf:resource="&ns3;ReduceCouplingTactic"/>
+        <ns1:annotatedTarget rdf:resource="&ns3;Tactic"/>
+        <ns1:annotatedProperty rdf:resource="&rdf;type"/>
     </ns1:Axiom>
     
 
@@ -10513,16 +10551,16 @@
         <belongsTo rdf:resource="&ns3;ReflectionPattern"/>
     </ns1:NamedIndividual>
     <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Bass91Resource"/>
-        <ns1:annotatedTarget rdf:resource="&ns3;ModifiabilityQualityAttribute"/>
-        <ns1:annotatedSource rdf:resource="&ns3;ReflectionImplView"/>
-        <ns1:annotatedProperty rdf:resource="&ns3;addresses"/>
-    </ns1:Axiom>
-    <ns1:Axiom>
         <ns1:annotatedTarget rdf:resource="&ns3;AdaptationViewtype"/>
         <resourceAuthor rdf:resource="&ns3;Avgeriou79Resource"/>
         <ns1:annotatedSource rdf:resource="&ns3;ReflectionImplView"/>
         <ns1:annotatedProperty rdf:resource="&ns3;belongsTo"/>
+    </ns1:Axiom>
+    <ns1:Axiom>
+        <resourceAuthor rdf:resource="&ns3;Bass91Resource"/>
+        <ns1:annotatedTarget rdf:resource="&ns3;ModifiabilityQualityAttribute"/>
+        <ns1:annotatedSource rdf:resource="&ns3;ReflectionImplView"/>
+        <ns1:annotatedProperty rdf:resource="&ns3;addresses"/>
     </ns1:Axiom>
     
 
@@ -10816,13 +10854,13 @@
         <belongsTo rdf:resource="&ns3;RemoteProcedureCallPattern"/>
     </ns1:NamedIndividual>
     <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Avgeriou80Resource"/>
+        <resourceAuthor rdf:resource="&ns3;Avgeriou28Resource"/>
         <ns1:annotatedSource rdf:resource="&ns3;DistributedObjectsImplPurpose"/>
         <ns1:annotatedTarget rdf:resource="&ns3;RemoteProcedureCallImplPurpose"/>
         <ns1:annotatedProperty rdf:resource="&ns1;sameAs"/>
     </ns1:Axiom>
     <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Avgeriou28Resource"/>
+        <resourceAuthor rdf:resource="&ns3;Avgeriou80Resource"/>
         <ns1:annotatedSource rdf:resource="&ns3;DistributedObjectsImplPurpose"/>
         <ns1:annotatedTarget rdf:resource="&ns3;RemoteProcedureCallImplPurpose"/>
         <ns1:annotatedProperty rdf:resource="&ns1;sameAs"/>
@@ -10840,7 +10878,7 @@
         <belongsTo rdf:resource="&ns3;RemoteProcedureCallPattern"/>
     </ns1:NamedIndividual>
     <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Avgeriou81Resource"/>
+        <resourceAuthor rdf:resource="&ns3;Avgeriou29Resource"/>
         <ns1:annotatedSource rdf:resource="&ns3;DistributedObjectsImplStructure"/>
         <ns1:annotatedTarget rdf:resource="&ns3;RemoteProcedureCallImplStructure"/>
         <ns1:annotatedProperty rdf:resource="&ns1;sameAs"/>
@@ -10852,7 +10890,7 @@
         <ns1:annotatedProperty rdf:resource="&ns3;isChildOf"/>
     </ns1:Axiom>
     <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Avgeriou29Resource"/>
+        <resourceAuthor rdf:resource="&ns3;Avgeriou81Resource"/>
         <ns1:annotatedSource rdf:resource="&ns3;DistributedObjectsImplStructure"/>
         <ns1:annotatedTarget rdf:resource="&ns3;RemoteProcedureCallImplStructure"/>
         <ns1:annotatedProperty rdf:resource="&ns1;sameAs"/>
@@ -10936,7 +10974,7 @@
         <isApplicableIn rdf:resource="&ns3;RemoteProcedureCallImplViewpoint"/>
     </ns1:NamedIndividual>
     <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Avgeriou85Resource"/>
+        <resourceAuthor rdf:resource="&ns3;Avgeriou33Resource"/>
         <ns1:annotatedSource rdf:resource="&ns3;DistributedObjectsPattern"/>
         <ns1:annotatedTarget rdf:resource="&ns3;RemoteProcedureCallPattern"/>
         <ns1:annotatedProperty rdf:resource="&ns1;sameAs"/>
@@ -10948,7 +10986,7 @@
         <ns1:annotatedProperty rdf:resource="&rdf;type"/>
     </ns1:Axiom>
     <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Avgeriou33Resource"/>
+        <resourceAuthor rdf:resource="&ns3;Avgeriou85Resource"/>
         <ns1:annotatedSource rdf:resource="&ns3;DistributedObjectsPattern"/>
         <ns1:annotatedTarget rdf:resource="&ns3;RemoteProcedureCallPattern"/>
         <ns1:annotatedProperty rdf:resource="&ns1;sameAs"/>
@@ -10974,10 +11012,10 @@
         <belongsTo rdf:resource="&ns3;SharedRepositoryPattern"/>
     </ns1:NamedIndividual>
     <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Avgeriou92Resource"/>
+        <resourceAuthor rdf:resource="&ns3;Bushmann65Resource"/>
+        <ns1:annotatedTarget rdf:resource="&ns3;ProductionSystemImplPurpose"/>
         <ns1:annotatedSource rdf:resource="&ns3;RepositoriesImplPurpose"/>
-        <ns1:annotatedTarget rdf:resource="&ns3;SharedRepositoryImplPurpose"/>
-        <ns1:annotatedProperty rdf:resource="&ns1;sameAs"/>
+        <ns1:annotatedProperty rdf:resource="&ns3;isParentOf"/>
     </ns1:Axiom>
     <ns1:Axiom>
         <resourceAuthor rdf:resource="&ns3;Avgeriou86Resource"/>
@@ -10986,10 +11024,10 @@
         <ns1:annotatedProperty rdf:resource="&ns1;sameAs"/>
     </ns1:Axiom>
     <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Bushmann65Resource"/>
-        <ns1:annotatedTarget rdf:resource="&ns3;ProductionSystemImplPurpose"/>
+        <resourceAuthor rdf:resource="&ns3;Avgeriou92Resource"/>
         <ns1:annotatedSource rdf:resource="&ns3;RepositoriesImplPurpose"/>
-        <ns1:annotatedProperty rdf:resource="&ns3;isParentOf"/>
+        <ns1:annotatedTarget rdf:resource="&ns3;SharedRepositoryImplPurpose"/>
+        <ns1:annotatedProperty rdf:resource="&ns1;sameAs"/>
     </ns1:Axiom>
     
 
@@ -11006,13 +11044,13 @@
         <belongsTo rdf:resource="&ns3;SharedRepositoryPattern"/>
     </ns1:NamedIndividual>
     <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Avgeriou87Resource"/>
+        <resourceAuthor rdf:resource="&ns3;Avgeriou93Resource"/>
         <ns1:annotatedSource rdf:resource="&ns3;RepositoriesImplStructure"/>
         <ns1:annotatedTarget rdf:resource="&ns3;SharedRepositoryImplStructure"/>
         <ns1:annotatedProperty rdf:resource="&ns1;sameAs"/>
     </ns1:Axiom>
     <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Avgeriou93Resource"/>
+        <resourceAuthor rdf:resource="&ns3;Avgeriou87Resource"/>
         <ns1:annotatedSource rdf:resource="&ns3;RepositoriesImplStructure"/>
         <ns1:annotatedTarget rdf:resource="&ns3;SharedRepositoryImplStructure"/>
         <ns1:annotatedProperty rdf:resource="&ns1;sameAs"/>
@@ -11063,13 +11101,13 @@
         <canApply rdf:resource="&ns3;SharedRepositoryPattern"/>
     </ns1:NamedIndividual>
     <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Avgeriou89Resource"/>
+        <resourceAuthor rdf:resource="&ns3;Avgeriou96Resource"/>
         <ns1:annotatedSource rdf:resource="&ns3;RepositoriesImplViewpoint"/>
         <ns1:annotatedTarget rdf:resource="&ns3;SharedRepositoryImplViewpoint"/>
         <ns1:annotatedProperty rdf:resource="&ns1;sameAs"/>
     </ns1:Axiom>
     <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Avgeriou96Resource"/>
+        <resourceAuthor rdf:resource="&ns3;Avgeriou89Resource"/>
         <ns1:annotatedSource rdf:resource="&ns3;RepositoriesImplViewpoint"/>
         <ns1:annotatedTarget rdf:resource="&ns3;SharedRepositoryImplViewpoint"/>
         <ns1:annotatedProperty rdf:resource="&ns1;sameAs"/>
@@ -11101,34 +11139,16 @@
         <ns1:sameAs rdf:resource="&ns3;SharedRepositoryPattern"/>
     </ns1:NamedIndividual>
     <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Clements45Resource"/>
-        <ns1:annotatedSource rdf:resource="&ns3;RepositoriesPattern"/>
-        <ns1:annotatedTarget rdf:resource="&ns3;SharedDataPattern"/>
-        <ns1:annotatedProperty rdf:resource="&ns3;isUsedIn"/>
-    </ns1:Axiom>
-    <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Avgeriou97Resource"/>
-        <ns1:annotatedSource rdf:resource="&ns3;RepositoriesPattern"/>
-        <ns1:annotatedTarget rdf:resource="&ns3;SharedRepositoryPattern"/>
-        <ns1:annotatedProperty rdf:resource="&ns1;sameAs"/>
-    </ns1:Axiom>
-    <ns1:Axiom>
         <resourceAuthor rdf:resource="&ns3;Clements43Resource"/>
         <ns1:annotatedTarget rdf:resource="&ns3;ImplicitInvocationPattern"/>
         <ns1:annotatedSource rdf:resource="&ns3;RepositoriesPattern"/>
         <ns1:annotatedProperty rdf:resource="&ns3;isCombinableWith"/>
     </ns1:Axiom>
     <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Clements44Resource"/>
-        <ns1:annotatedTarget rdf:resource="&ns3;ClientServerPattern"/>
+        <resourceAuthor rdf:resource="&ns3;Clements45Resource"/>
         <ns1:annotatedSource rdf:resource="&ns3;RepositoriesPattern"/>
-        <ns1:annotatedProperty rdf:resource="&ns3;isCombinableWith"/>
-    </ns1:Axiom>
-    <ns1:Axiom>
-        <ns1:annotatedTarget rdf:resource="&ns3;Pattern"/>
-        <ns1:annotatedSource rdf:resource="&ns3;RepositoriesPattern"/>
-        <resourceAuthor rdf:resource="&ns3;Shaw36Resource"/>
-        <ns1:annotatedProperty rdf:resource="&rdf;type"/>
+        <ns1:annotatedTarget rdf:resource="&ns3;SharedDataPattern"/>
+        <ns1:annotatedProperty rdf:resource="&ns3;isUsedIn"/>
     </ns1:Axiom>
     <ns1:Axiom>
         <resourceAuthor rdf:resource="&ns3;Avgeriou90Resource"/>
@@ -11137,8 +11157,26 @@
         <ns1:annotatedProperty rdf:resource="&ns1;sameAs"/>
     </ns1:Axiom>
     <ns1:Axiom>
+        <ns1:annotatedTarget rdf:resource="&ns3;Pattern"/>
+        <ns1:annotatedSource rdf:resource="&ns3;RepositoriesPattern"/>
+        <resourceAuthor rdf:resource="&ns3;Shaw36Resource"/>
+        <ns1:annotatedProperty rdf:resource="&rdf;type"/>
+    </ns1:Axiom>
+    <ns1:Axiom>
         <resourceAuthor rdf:resource="&ns3;Clements42Resource"/>
         <ns1:annotatedTarget rdf:resource="&ns3;PipesAndFiltersPattern"/>
+        <ns1:annotatedSource rdf:resource="&ns3;RepositoriesPattern"/>
+        <ns1:annotatedProperty rdf:resource="&ns3;isCombinableWith"/>
+    </ns1:Axiom>
+    <ns1:Axiom>
+        <resourceAuthor rdf:resource="&ns3;Avgeriou97Resource"/>
+        <ns1:annotatedSource rdf:resource="&ns3;RepositoriesPattern"/>
+        <ns1:annotatedTarget rdf:resource="&ns3;SharedRepositoryPattern"/>
+        <ns1:annotatedProperty rdf:resource="&ns1;sameAs"/>
+    </ns1:Axiom>
+    <ns1:Axiom>
+        <resourceAuthor rdf:resource="&ns3;Clements44Resource"/>
+        <ns1:annotatedTarget rdf:resource="&ns3;ClientServerPattern"/>
         <ns1:annotatedSource rdf:resource="&ns3;RepositoriesPattern"/>
         <ns1:annotatedProperty rdf:resource="&ns3;isCombinableWith"/>
     </ns1:Axiom>
@@ -11159,22 +11197,10 @@
         <isChildOf rdf:resource="&ns3;ReduceCouplingTactic"/>
     </ns1:NamedIndividual>
     <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Bass99Resource"/>
-        <ns1:annotatedTarget rdf:resource="&ns3;MicrokernelPattern"/>
-        <ns1:annotatedSource rdf:resource="&ns3;RestrictCommunicationPathsTactic"/>
-        <ns1:annotatedProperty rdf:resource="&ns3;augments"/>
-    </ns1:Axiom>
-    <ns1:Axiom>
         <resourceAuthor rdf:resource="&ns3;Bass97Resource"/>
         <ns1:annotatedTarget rdf:resource="&ns3;ReduceCouplingTactic"/>
         <ns1:annotatedSource rdf:resource="&ns3;RestrictCommunicationPathsTactic"/>
         <ns1:annotatedProperty rdf:resource="&ns3;isChildOf"/>
-    </ns1:Axiom>
-    <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Bass94Resource"/>
-        <ns1:annotatedTarget rdf:resource="&ns3;BlackboardPattern"/>
-        <ns1:annotatedSource rdf:resource="&ns3;RestrictCommunicationPathsTactic"/>
-        <ns1:annotatedProperty rdf:resource="&ns3;augments"/>
     </ns1:Axiom>
     <ns1:Axiom>
         <resourceAuthor rdf:resource="&ns3;Bass95Resource"/>
@@ -11183,20 +11209,32 @@
         <ns1:annotatedProperty rdf:resource="&rdf;type"/>
     </ns1:Axiom>
     <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Bass98Resource"/>
-        <ns1:annotatedTarget rdf:resource="&ns3;PipesAndFiltersPattern"/>
-        <ns1:annotatedSource rdf:resource="&ns3;RestrictCommunicationPathsTactic"/>
-        <ns1:annotatedProperty rdf:resource="&ns3;augments"/>
-    </ns1:Axiom>
-    <ns1:Axiom>
         <resourceAuthor rdf:resource="&ns3;Bass93Resource"/>
         <ns1:annotatedTarget rdf:resource="&ns3;BrokerPattern"/>
         <ns1:annotatedSource rdf:resource="&ns3;RestrictCommunicationPathsTactic"/>
         <ns1:annotatedProperty rdf:resource="&ns3;augments"/>
     </ns1:Axiom>
     <ns1:Axiom>
+        <resourceAuthor rdf:resource="&ns3;Bass98Resource"/>
+        <ns1:annotatedTarget rdf:resource="&ns3;PipesAndFiltersPattern"/>
+        <ns1:annotatedSource rdf:resource="&ns3;RestrictCommunicationPathsTactic"/>
+        <ns1:annotatedProperty rdf:resource="&ns3;augments"/>
+    </ns1:Axiom>
+    <ns1:Axiom>
         <resourceAuthor rdf:resource="&ns3;Bass96Resource"/>
         <ns1:annotatedTarget rdf:resource="&ns3;LayeredArchitecturePattern"/>
+        <ns1:annotatedSource rdf:resource="&ns3;RestrictCommunicationPathsTactic"/>
+        <ns1:annotatedProperty rdf:resource="&ns3;augments"/>
+    </ns1:Axiom>
+    <ns1:Axiom>
+        <resourceAuthor rdf:resource="&ns3;Bass94Resource"/>
+        <ns1:annotatedTarget rdf:resource="&ns3;BlackboardPattern"/>
+        <ns1:annotatedSource rdf:resource="&ns3;RestrictCommunicationPathsTactic"/>
+        <ns1:annotatedProperty rdf:resource="&ns3;augments"/>
+    </ns1:Axiom>
+    <ns1:Axiom>
+        <resourceAuthor rdf:resource="&ns3;Bass99Resource"/>
+        <ns1:annotatedTarget rdf:resource="&ns3;MicrokernelPattern"/>
         <ns1:annotatedSource rdf:resource="&ns3;RestrictCommunicationPathsTactic"/>
         <ns1:annotatedProperty rdf:resource="&ns3;augments"/>
     </ns1:Axiom>
@@ -11633,13 +11671,13 @@
         <belongsTo rdf:resource="&ns3;SharedRepositoryPattern"/>
     </ns1:NamedIndividual>
     <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Avgeriou87Resource"/>
+        <resourceAuthor rdf:resource="&ns3;Avgeriou93Resource"/>
         <ns1:annotatedSource rdf:resource="&ns3;RepositoriesImplStructure"/>
         <ns1:annotatedTarget rdf:resource="&ns3;SharedRepositoryImplStructure"/>
         <ns1:annotatedProperty rdf:resource="&ns1;sameAs"/>
     </ns1:Axiom>
     <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Avgeriou93Resource"/>
+        <resourceAuthor rdf:resource="&ns3;Avgeriou87Resource"/>
         <ns1:annotatedSource rdf:resource="&ns3;RepositoriesImplStructure"/>
         <ns1:annotatedTarget rdf:resource="&ns3;SharedRepositoryImplStructure"/>
         <ns1:annotatedProperty rdf:resource="&ns1;sameAs"/>
@@ -11661,6 +11699,12 @@
         <belongsTo rdf:resource="&ns3;SharedRepositoryPattern"/>
     </ns1:NamedIndividual>
     <ns1:Axiom>
+        <resourceAuthor rdf:resource="&ns3;Avgeriou94Resource"/>
+        <ns1:annotatedTarget rdf:resource="&ns3;DataCenteredViewtype"/>
+        <ns1:annotatedSource rdf:resource="&ns3;SharedRepositoryImplView"/>
+        <ns1:annotatedProperty rdf:resource="&ns3;belongsTo"/>
+    </ns1:Axiom>
+    <ns1:Axiom>
         <resourceAuthor rdf:resource="&ns3;Avgeriou95Resource"/>
         <ns1:annotatedSource rdf:resource="&ns3;RepositoriesImplView"/>
         <ns1:annotatedTarget rdf:resource="&ns3;SharedRepositoryImplView"/>
@@ -11671,12 +11715,6 @@
         <ns1:annotatedSource rdf:resource="&ns3;RepositoriesImplView"/>
         <ns1:annotatedTarget rdf:resource="&ns3;SharedRepositoryImplView"/>
         <ns1:annotatedProperty rdf:resource="&ns1;sameAs"/>
-    </ns1:Axiom>
-    <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Avgeriou94Resource"/>
-        <ns1:annotatedTarget rdf:resource="&ns3;DataCenteredViewtype"/>
-        <ns1:annotatedSource rdf:resource="&ns3;SharedRepositoryImplView"/>
-        <ns1:annotatedProperty rdf:resource="&ns3;belongsTo"/>
     </ns1:Axiom>
     
 
@@ -11694,13 +11732,13 @@
         <canApply rdf:resource="&ns3;SharedRepositoryPattern"/>
     </ns1:NamedIndividual>
     <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Avgeriou89Resource"/>
+        <resourceAuthor rdf:resource="&ns3;Avgeriou96Resource"/>
         <ns1:annotatedSource rdf:resource="&ns3;RepositoriesImplViewpoint"/>
         <ns1:annotatedTarget rdf:resource="&ns3;SharedRepositoryImplViewpoint"/>
         <ns1:annotatedProperty rdf:resource="&ns1;sameAs"/>
     </ns1:Axiom>
     <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Avgeriou96Resource"/>
+        <resourceAuthor rdf:resource="&ns3;Avgeriou89Resource"/>
         <ns1:annotatedSource rdf:resource="&ns3;RepositoriesImplViewpoint"/>
         <ns1:annotatedTarget rdf:resource="&ns3;SharedRepositoryImplViewpoint"/>
         <ns1:annotatedProperty rdf:resource="&ns1;sameAs"/>
@@ -11731,6 +11769,12 @@
         <isCombinableWith rdf:resource="&ns3;SharedRepositoryPattern"/>
     </ns1:NamedIndividual>
     <ns1:Axiom>
+        <resourceAuthor rdf:resource="&ns3;Avgeriou90Resource"/>
+        <ns1:annotatedSource rdf:resource="&ns3;RepositoriesPattern"/>
+        <ns1:annotatedTarget rdf:resource="&ns3;SharedRepositoryPattern"/>
+        <ns1:annotatedProperty rdf:resource="&ns1;sameAs"/>
+    </ns1:Axiom>
+    <ns1:Axiom>
         <resourceAuthor rdf:resource="&ns3;Avgeriou98Resource"/>
         <ns1:annotatedTarget rdf:resource="&ns3;Pattern"/>
         <ns1:annotatedSource rdf:resource="&ns3;SharedRepositoryPattern"/>
@@ -11738,12 +11782,6 @@
     </ns1:Axiom>
     <ns1:Axiom>
         <resourceAuthor rdf:resource="&ns3;Avgeriou97Resource"/>
-        <ns1:annotatedSource rdf:resource="&ns3;RepositoriesPattern"/>
-        <ns1:annotatedTarget rdf:resource="&ns3;SharedRepositoryPattern"/>
-        <ns1:annotatedProperty rdf:resource="&ns1;sameAs"/>
-    </ns1:Axiom>
-    <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Avgeriou90Resource"/>
         <ns1:annotatedSource rdf:resource="&ns3;RepositoriesPattern"/>
         <ns1:annotatedTarget rdf:resource="&ns3;SharedRepositoryPattern"/>
         <ns1:annotatedProperty rdf:resource="&ns1;sameAs"/>
@@ -12606,10 +12644,16 @@
         <isChildOf rdf:resource="&ns3;ReduceCouplingTactic"/>
     </ns1:NamedIndividual>
     <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Bass114Resource"/>
-        <ns1:annotatedTarget rdf:resource="&ns3;Tactic"/>
+        <resourceAuthor rdf:resource="&ns3;Bass115Resource"/>
+        <ns1:annotatedTarget rdf:resource="&ns3;PresentationAbstractionControlPattern"/>
         <ns1:annotatedSource rdf:resource="&ns3;UseIntermediaryTactic"/>
-        <ns1:annotatedProperty rdf:resource="&rdf;type"/>
+        <ns1:annotatedProperty rdf:resource="&ns3;augments"/>
+    </ns1:Axiom>
+    <ns1:Axiom>
+        <resourceAuthor rdf:resource="&ns3;Bass118Resource"/>
+        <ns1:annotatedTarget rdf:resource="&ns3;LayeredArchitecturePattern"/>
+        <ns1:annotatedSource rdf:resource="&ns3;UseIntermediaryTactic"/>
+        <ns1:annotatedProperty rdf:resource="&ns3;augments"/>
     </ns1:Axiom>
     <ns1:Axiom>
         <resourceAuthor rdf:resource="&ns3;Bass111Resource"/>
@@ -12624,8 +12668,8 @@
         <ns1:annotatedProperty rdf:resource="&ns3;augments"/>
     </ns1:Axiom>
     <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Bass115Resource"/>
-        <ns1:annotatedTarget rdf:resource="&ns3;PresentationAbstractionControlPattern"/>
+        <resourceAuthor rdf:resource="&ns3;Bass113Resource"/>
+        <ns1:annotatedTarget rdf:resource="&ns3;PipesAndFiltersPattern"/>
         <ns1:annotatedSource rdf:resource="&ns3;UseIntermediaryTactic"/>
         <ns1:annotatedProperty rdf:resource="&ns3;augments"/>
     </ns1:Axiom>
@@ -12636,26 +12680,20 @@
         <ns1:annotatedProperty rdf:resource="&ns3;isChildOf"/>
     </ns1:Axiom>
     <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Bass118Resource"/>
-        <ns1:annotatedTarget rdf:resource="&ns3;LayeredArchitecturePattern"/>
+        <resourceAuthor rdf:resource="&ns3;Bass114Resource"/>
+        <ns1:annotatedTarget rdf:resource="&ns3;Tactic"/>
+        <ns1:annotatedSource rdf:resource="&ns3;UseIntermediaryTactic"/>
+        <ns1:annotatedProperty rdf:resource="&rdf;type"/>
+    </ns1:Axiom>
+    <ns1:Axiom>
+        <resourceAuthor rdf:resource="&ns3;Bass117Resource"/>
+        <ns1:annotatedTarget rdf:resource="&ns3;BlackboardPattern"/>
         <ns1:annotatedSource rdf:resource="&ns3;UseIntermediaryTactic"/>
         <ns1:annotatedProperty rdf:resource="&ns3;augments"/>
     </ns1:Axiom>
     <ns1:Axiom>
         <resourceAuthor rdf:resource="&ns3;Bass116Resource"/>
         <ns1:annotatedTarget rdf:resource="&ns3;ModelViewControllerPattern"/>
-        <ns1:annotatedSource rdf:resource="&ns3;UseIntermediaryTactic"/>
-        <ns1:annotatedProperty rdf:resource="&ns3;augments"/>
-    </ns1:Axiom>
-    <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Bass113Resource"/>
-        <ns1:annotatedTarget rdf:resource="&ns3;PipesAndFiltersPattern"/>
-        <ns1:annotatedSource rdf:resource="&ns3;UseIntermediaryTactic"/>
-        <ns1:annotatedProperty rdf:resource="&ns3;augments"/>
-    </ns1:Axiom>
-    <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Bass117Resource"/>
-        <ns1:annotatedTarget rdf:resource="&ns3;BlackboardPattern"/>
         <ns1:annotatedSource rdf:resource="&ns3;UseIntermediaryTactic"/>
         <ns1:annotatedProperty rdf:resource="&ns3;augments"/>
     </ns1:Axiom>
@@ -12673,8 +12711,8 @@
         <augments rdf:resource="&ns3;ModelViewControllerPattern"/>
     </ns1:NamedIndividual>
     <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Bass119Resource"/>
-        <ns1:annotatedTarget rdf:resource="&ns3;ModelViewControllerPattern"/>
+        <resourceAuthor rdf:resource="&ns3;Bass122Resource"/>
+        <ns1:annotatedTarget rdf:resource="&ns3;BlackboardPattern"/>
         <ns1:annotatedSource rdf:resource="&ns3;UseRuntimeBindingTactic"/>
         <ns1:annotatedProperty rdf:resource="&ns3;augments"/>
     </ns1:Axiom>
@@ -12685,8 +12723,8 @@
         <ns1:annotatedProperty rdf:resource="&ns3;isChildOf"/>
     </ns1:Axiom>
     <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Bass122Resource"/>
-        <ns1:annotatedTarget rdf:resource="&ns3;BlackboardPattern"/>
+        <resourceAuthor rdf:resource="&ns3;Bass119Resource"/>
+        <ns1:annotatedTarget rdf:resource="&ns3;ModelViewControllerPattern"/>
         <ns1:annotatedSource rdf:resource="&ns3;UseRuntimeBindingTactic"/>
         <ns1:annotatedProperty rdf:resource="&ns3;augments"/>
     </ns1:Axiom>
@@ -12722,16 +12760,16 @@
         <ns1:annotatedProperty rdf:resource="&ns3;augments"/>
     </ns1:Axiom>
     <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Bass123Resource"/>
-        <ns1:annotatedTarget rdf:resource="&ns3;BlackboardPattern"/>
-        <ns1:annotatedSource rdf:resource="&ns3;UseRuntimeRegistrationTactic"/>
-        <ns1:annotatedProperty rdf:resource="&ns3;augments"/>
-    </ns1:Axiom>
-    <ns1:Axiom>
         <resourceAuthor rdf:resource="&ns3;Bass126Resource"/>
         <ns1:annotatedTarget rdf:resource="&ns3;DeferBindingTimeTactic"/>
         <ns1:annotatedSource rdf:resource="&ns3;UseRuntimeRegistrationTactic"/>
         <ns1:annotatedProperty rdf:resource="&ns3;isChildOf"/>
+    </ns1:Axiom>
+    <ns1:Axiom>
+        <resourceAuthor rdf:resource="&ns3;Bass123Resource"/>
+        <ns1:annotatedTarget rdf:resource="&ns3;BlackboardPattern"/>
+        <ns1:annotatedSource rdf:resource="&ns3;UseRuntimeRegistrationTactic"/>
+        <ns1:annotatedProperty rdf:resource="&ns3;augments"/>
     </ns1:Axiom>
     
 
@@ -12745,16 +12783,16 @@
         <augments rdf:resource="&ns3;PipesAndFiltersPattern"/>
     </ns1:NamedIndividual>
     <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Bass127Resource"/>
-        <ns1:annotatedTarget rdf:resource="&ns3;Tactic"/>
-        <ns1:annotatedSource rdf:resource="&ns3;UseStartupTimeBindingTactic"/>
-        <ns1:annotatedProperty rdf:resource="&rdf;type"/>
-    </ns1:Axiom>
-    <ns1:Axiom>
         <resourceAuthor rdf:resource="&ns3;Bass128Resource"/>
         <ns1:annotatedTarget rdf:resource="&ns3;DeferBindingTimeTactic"/>
         <ns1:annotatedSource rdf:resource="&ns3;UseStartupTimeBindingTactic"/>
         <ns1:annotatedProperty rdf:resource="&ns3;isChildOf"/>
+    </ns1:Axiom>
+    <ns1:Axiom>
+        <resourceAuthor rdf:resource="&ns3;Bass127Resource"/>
+        <ns1:annotatedTarget rdf:resource="&ns3;Tactic"/>
+        <ns1:annotatedSource rdf:resource="&ns3;UseStartupTimeBindingTactic"/>
+        <ns1:annotatedProperty rdf:resource="&rdf;type"/>
     </ns1:Axiom>
     <ns1:Axiom>
         <resourceAuthor rdf:resource="&ns3;Bass129Resource"/>
@@ -13044,10 +13082,11 @@
         <uses rdf:resource="&ns3;VirtualMachinesPattern"/>
     </ns1:NamedIndividual>
     <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Bushmann69Resource"/>
-        <ns1:annotatedTarget rdf:resource="&ns3;LayeredArchitecturePattern"/>
+        <resourceAuthor rdf:resource="&ns3;Avgeriou101Resource"/>
+        <ns1:annotatedTarget rdf:resource="&ns3;Pattern"/>
+        <resourceAuthor rdf:resource="&ns3;Shaw42Resource"/>
         <ns1:annotatedSource rdf:resource="&ns3;VirtualMachinesPattern"/>
-        <ns1:annotatedProperty rdf:resource="&ns3;uses"/>
+        <ns1:annotatedProperty rdf:resource="&rdf;type"/>
     </ns1:Axiom>
     <ns1:Axiom>
         <resourceAuthor rdf:resource="&ns3;Clements53Resource"/>
@@ -13062,11 +13101,10 @@
         <ns1:annotatedProperty rdf:resource="&ns3;isUsedIn"/>
     </ns1:Axiom>
     <ns1:Axiom>
-        <resourceAuthor rdf:resource="&ns3;Avgeriou101Resource"/>
-        <ns1:annotatedTarget rdf:resource="&ns3;Pattern"/>
-        <resourceAuthor rdf:resource="&ns3;Shaw42Resource"/>
+        <resourceAuthor rdf:resource="&ns3;Bushmann69Resource"/>
+        <ns1:annotatedTarget rdf:resource="&ns3;LayeredArchitecturePattern"/>
         <ns1:annotatedSource rdf:resource="&ns3;VirtualMachinesPattern"/>
-        <ns1:annotatedProperty rdf:resource="&rdf;type"/>
+        <ns1:annotatedProperty rdf:resource="&ns3;uses"/>
     </ns1:Axiom>
     
 
